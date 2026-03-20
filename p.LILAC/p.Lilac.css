@@ -1,0 +1,588 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root {
+    --lilacc1 : rgb(83, 29, 36);
+    --lilacc2 : rgba(0, 0, 0, 0.233);
+    --lilacc3 : rgb(255, 255, 255);
+    --lilacc4 : rgba(255, 255, 255, 0.034);
+    --lilacc5 : rgba(255, 255, 255, 0.021);
+    --corfundo : rgb(219, 200, 202);
+
+    /*TESTE*/
+    --testeA: 0;
+    --teste : rgb(45, 0, 248, var(--testeA));
+    --teste1: rgb(255, 0, 0, var(--testeA));
+    --teste2: rgb(16, 255, 16, var(--testeA));
+    --teste3: rgb(0, 0, 255, var(--testeA));
+}
+
+
+body {
+    position: relative;
+    width: 100vw;
+    margin: 0;
+    background-image: url('midias/Lilac\ fundo.png');
+    font: normal 600 1em "Oswald";  
+    overflow: hidden;
+}
+
+
+.lilacvideo { 
+    border-radius: 10px;
+    z-index: -1;
+    object-fit: cover;
+    width: 100dvw;
+    height: 100dvh;
+    border: 0;
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    transition: filter 1s;
+}
+
+
+.lilacvideo.videoclick, .lilacvideosmart.videoclick {
+    filter: brightness(20%) blur(50px);
+    transition: filter 1s;
+}
+
+
+.lilacvideosmart {
+    display: none;
+    position: relative;
+    pointer-events: none;
+}
+
+
+.meio {border: var(--teste) solid 1px;
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    width: 100%;
+    top: 50px;
+}
+
+
+.texto {border: var(--teste) solid 1px;
+    position: absolute;
+    width: 50vw;
+    display: grid;
+    grid-template: repeat(2, 1fr)/ repeat(5, 1fr);
+    margin-left: 2%;
+    margin-top: 20%;
+    z-index: 0;
+    color: var(--lilacc1);
+    text-shadow: 3px 3px 1px var(--lilacc2);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+#texto1 {
+    font-size: 2.2em;
+    font-weight: 1em;
+    margin-top: 0;
+    grid-area: 2 / 2 / 3 / 6;
+}
+
+
+#texto2 {
+    justify-self: end;
+    font-weight: 0.5em;
+    grid-area: 2 / 1 / 3 / 2;
+    padding-right: 10%;
+}
+
+
+#suavidade {border: var(--teste) solid 1px;
+    font: italic 20 60px "Alumni Sans";
+    font-optical-sizing: auto;
+    font-size: 60px;
+    margin-bottom: 0;
+    letter-spacing: 19px;
+    animation: suave 2s linear;
+    transition: letter-spacing 1s ease-in-out;
+    grid-area: 1 / 1/ 2/ -1;
+}
+
+#suavidade:hover {
+    letter-spacing: 22px;
+}
+
+
+@keyframes suave {
+    0% {letter-spacing: 0px;}
+    100% {letter-spacing: 19px;}
+}
+
+
+.WMENU {
+    background-color: var(--cor4);
+}
+
+
+.wmenu1 {
+    color: var(--lilacc1);
+    text-shadow: 2px 2px 2px var(--lilacc2);
+}
+
+
+.wm1 {
+    color: var(--lilacc1);
+    text-shadow: 1px 1px 2px var(--lilacc2);
+}
+
+
+.wm2 {
+    color: var(--lilacc1);
+    text-shadow: 1px 1px 2px var(--lilacc2);
+}
+
+
+.wm1:hover {
+    background-color: var(--lilacc1);
+    color: white;
+    box-shadow: 5px 5px 5px var(--lilacc2);
+}
+
+
+.wm2:hover {
+    background-color: var(--lilacc1);
+    color: white;
+    box-shadow: 5px 5px 5px var(--lilacc2);
+}
+
+
+.homebotao {
+    color: var(--lilacc1);
+}
+
+
+.homebotao:hover {
+    background-color: var(--lilacc1);
+    color: white;
+    box-shadow: 5px 5px 5px var(--lilacc2);
+}
+
+
+/*RODAPÉ*/
+#RODAPE {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: var(--lilacc1);
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1%;
+    right: 0;
+    bottom: 0;
+    border-radius: 25px 0px 0px 0px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+footer#RODAPE {             
+    color: var(--corfundo);
+    font-size: 0.7em;
+}
+
+
+.f img{
+    width: 30px;
+    margin: 5px;
+}
+/*RODAPÉ*/
+
+
+.icon {
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    visibility: visible;
+    width: 200px;
+    height: 220px;
+    z-index: 1;
+}
+
+
+.lilacicon {
+    position: absolute;
+    width: 8vw;
+    transition: transform 1s ease-in-out;
+    filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.8));
+    z-index: 1;
+}
+
+
+.icon:hover .lilacicon {
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0.6));
+    transition: transform 1s ease-in-out,
+                filter 1s ease-in-out;
+}
+
+
+.carrossel {border: var(--teste3) solid 1px;
+    visibility: hidden;
+    position: relative;
+    z-index: 9999;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.carrossel.ativado {
+    visibility: visible;
+}
+
+
+.imagens {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--teste1);
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imagem {background-color: var(--teste2);  
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    animation-play-state: paused;
+    animation: galeria 16s infinite;
+    animation-fill-mode: both;
+}
+
+
+.imagem:first-child     {opacity: 1;}
+.imagem:nth-child(1)    {animation-delay: 0s;}
+.imagem:nth-child(2)    {animation-delay: 4s;}
+.imagem:nth-child(3)    {animation-delay: 8s;}
+.imagem:nth-child(4)    {animation-delay: 12s;}
+
+
+.imagem img { 
+    max-width: 1080px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+
+.imagem.ativado {
+    display: inline-block;
+    opacity: 1;
+    animation-play-state: running;
+    z-index: 10;
+}
+
+
+.imagens>.imagem {
+    transition: scale 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+
+@keyframes galeria {
+    0%      { opacity: 0;}
+    5%      { opacity: 1;}
+    25%     { opacity: 1;}
+    30%     { opacity: 0;}
+    100%    { opacity: 0;}
+}
+
+
+
+/*TELA DE LOADING*/
+
+
+#loadingframe {
+    background-color: var(--corfundo);
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+.loadinganimation {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template: repeat(20, auto)/repeat(20, auto);
+}
+
+
+.lilac {
+    animation: loadingLILAC 3s ease-in-out infinite;
+}
+
+
+#lilacp {
+    grid-row-start: 10;
+    grid-row-end: 12;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(midias/ICONELILAC.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 2px black);
+    scale: 0;
+}
+
+
+#lilacm {
+    grid-row-start: 9;
+    grid-row-end: 13;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    background-image: url(midias/ICONELILAC.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 2px black);
+    scale: 0;
+}
+
+
+#lilacg {
+    grid-row-start: 7;
+    grid-row-end: 15;
+    grid-column-start: 11;
+    grid-column-end: 19;
+    background-image: url(midias/ICONELILAC.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 2px black);
+    scale: 0;
+}
+
+
+.lilac:nth-child(1)  { animation-delay: 0s;}
+.lilac:nth-child(2)  { animation-delay: 1s;}
+.lilac:nth-child(3)  { animation-delay: 2s;}
+
+
+@keyframes loadingLILAC {
+    0%      { scale: 0;     }    
+    33%     { scale: 1.2;   }
+    50%     { scale: 0;     }
+    100%    { scale: 0;     }
+}
+
+#loadingframe.paginacarregada {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+    /*MENU HAMBURGER*/
+    svg {
+        border-radius: 5px;
+        background-color: var(--lilacc1);
+        fill: var(--corfundo);
+    }
+
+
+
+    svg:hover {
+        background-color: var(--corfundo);
+        fill: var(--lilacc1);
+        box-shadow: 5px 5px 5px var(--lilacc2);
+    }
+
+
+    .wmenuside {
+        background-color: var(--lilacc1);
+    }
+
+
+    .WMENU {
+        max-height: 10em;
+    }
+
+
+    .swm1 {
+        color: var(--corfundo);
+        }
+
+
+    .swm2 {
+        color: var(--corfundo);
+        text-shadow: 1px 1px 2px var(--lilacc2);
+        }
+
+
+    .swm1:hover {
+        background-color: var(--corfundo);
+        border-radius: 10px;
+        color: var(--lilacc1);
+        box-shadow: 5px 5px 5px var(--lilacc2);
+        }
+
+
+    .swm2:hover {
+        background-color: var(--corfundo);
+        color: var(--lilacc1);
+        box-shadow: 5px 5px 5px var(--lilacc2);
+    }
+/*MENU HAMBURGER*/
+
+
+/*LISTA DE PROJETOS*/
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: var(--lilacc3);
+}
+#listaPROJETOSd:hover a,
+#listaPROJETOSm:hover a{
+    color: var(--lilacc3);
+}
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    color: var(--lilacc1);
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--lilacc1);
+}
+/*LISTA DE PROJETOS*/
+
+
+
+@media (max-width: 500px){
+    body {
+    font-size: 0.8em;
+}
+}
+
+@media (max-width: 1100px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    html, body {
+        overflow: hidden;
+    }
+
+
+    .lilacvideo {
+        display: none;
+    }
+
+
+    .lilacvideosmart {
+        display: inline-block;
+        visibility: visible;
+        position: fixed;
+        object-fit: cover;
+        width: 100svw;
+        height: 100svh;
+        inset: 0;
+        z-index: -1;
+    } 
+
+
+    .lilacvideosmart.videoclick {
+        filter: brightness(20%) blur(50px);
+        transition: filter 1s;
+    }
+
+
+    body {
+        position: relative;
+        overflow-y: hidden;
+    }
+
+
+    .texto {
+        position: absolute;
+        bottom: 60%;
+        width: 350px;
+        text-shadow: 2px 2px 2px var(--lilacc2);
+        z-index: 10;
+    }
+
+
+
+    .imagem > img {
+        width: 96vw;
+    }
+
+
+    .icon {
+        position: absolute;
+        visibility: visible;
+        left: 50%;
+        width: 75vw;
+        height: 75vh;
+        z-index: 1;
+        overflow: visible;
+    }
+
+
+    .lilacicon {
+        position: absolute;
+        width: 15vw;
+        z-index: 1;
+        transition: transform 1s ease-in-out;
+        left: 25%;
+        top: 0%;
+        filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.8));
+    }
+
+
+
+}
+
+
+@media (max-width: 520px){
+/*LISTA DE PROJETOS*/
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: var(--lilacc1);
+}
+#listaPROJETOSd:hover a,
+#listaPROJETOSm:hover a{
+    color: var(--lilacc1);
+}
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    color: var(--lilacc3);
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--lilacc3);
+}
+/*LISTA DE PROJETOS*/
+}

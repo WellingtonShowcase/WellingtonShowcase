@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+:root {
+    --led : rgba(119, 255, 71);
+}
+
+
+body {
+    position: relative;
+    font: normal 600 1em "Oswald";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.350);
+    background: linear-gradient(to right, white, rgb(189, 189, 189));
+}
+
+
+.WMENU {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.wmenu1 {
+    color: var(--led);
+    text-shadow: 2px 2px 2px var(--lilacc2);
+}
+
+
+.wm1 {
+    color: var(--led);
+    text-shadow: 1px 1px 2px var(--lilacc2);
+}
+
+
+.wm2 {
+    color: var(--led);
+    text-shadow: 1px 1px 2px var(--lilacc2);
+}
+
+
+.wm1:hover {
+    background-color: var(--led);
+    color: black;
+    box-shadow: 5px 5px 5px var(--lilacc2);
+}
+
+
+.wm2:hover {
+    background-color: var(--led);
+    color: black;
+    box-shadow: 5px 5px 5px var(--lilacc2);
+}
+
+
+.homebotao {
+    color: var(--lilacc1);
+}
+
+.homebotao:hover {
+    background-color: var(--led);
+    color: black;
+    box-shadow: 5px 5px 5px var(--lilacc2);
+}
+
+
+/*LISTA DE PROJETOS*/
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: black;
+}
+#listaPROJETOSd:hover a,
+#listaPROJETOSm:hover a{
+    color: black;
+}
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    color: var(--led);
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--led);
+}
+/*LISTA DE PROJETOS*/
+
+
+/*MENU HAMBURGER*/
+.swm1, .swm2 {
+    display: none;
+}
+
+
+svg {
+    display: none;
+}
+/*MENU HAMBURGER*/
+
+
+.cabecalho {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.videoomniblade {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    left: -7%;
+    top: 8%;
+    object-fit: cover;
+    background-size: cover;
+    pointer-events: none;
+}
+
+
+.OMNIBLADE {
+    position: absolute;
+    width: 80vw;
+    left: 50%;
+    z-index: 5;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+
+#svg {
+    transition: opacity 0.2s ease-in-out;
+    filter: blur(2px);
+}
+
+
+.chamada {
+    position: relative;
+    display: flex;
+    margin: 3%;
+    padding: 1%;
+    height: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+
+article {
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+
+.frames {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.midias {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.l {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    left: 0;
+}
+
+
+.r {
+    position: absolute;
+    z-index: 5;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+}
+
+
+.imagens {
+    display: flex;
+    width: 100%;
+}
+
+
+img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+}
+
+
+.txtprinc {
+    width: 40%;
+    height: 100%;
+    padding: 2%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.txtprinch1, .txtprincp {
+    padding: 2%;
+}
+
+
+.txtprinch1 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+
+strong {
+    font-weight: 600;
+    font-size: 1.8em;
+    font-style: oblique;
+}
+
+
+#OMNIBLADE {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+
+#color {
+    display: flex;
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    align-items: center;
+    width: 200px;
+    justify-content: space-evenly
+}
+
+
+#azul, #preto, #cinza {
+    position: absolute;
+    width: 50px;
+    height:  50px;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: -5px -5px 2px rgba(0, 0, 0, 0.4);
+    transition: scale 0.3s ease-in-out;
+}
+
+
+#azul {
+    position: relative;
+    background: linear-gradient(to right, white, blue);
+    cursor: pointer;
+}
+
+
+#preto {
+    position: relative;
+    background: linear-gradient(to right, white, black);
+    cursor: pointer;
+}
+
+
+#cinza {
+    position: relative;
+    background: linear-gradient(to right, white, rgb(114, 114, 114));
+    cursor: pointer;
+}
+
+
+#azul:hover, #preto:hover {
+    scale: 1.1;
+    z-index: 4;
+    box-shadow: -7px -7px 5px rgba(0, 0, 0, 0.4);
+}
+
+
+.txtprincp {
+    font: normal 400 1.1em "Oswald";
+}
+
+
+.headline {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 3%;
+    padding: 2%;
+    align-items: center;
+}
+
+
+.caracteristica {
+    width: 40%;
+}
+
+
+.imagemchamada {
+    width: 50%;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4));
+}
+
+
+.imagemchamada2 {
+    width: 40%;
+    object-fit: cover;
+}
+
+
+.imagemchamada2 img{
+    width: 100%;
+    filter: drop-shadow(5px 5px 2px rgba(0, 0, 0, 0.4));
+}
+
+
+
+
+/*RODAPÉ*/
+#RODAPE {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 1%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+footer#RODAPE {             
+    color: var(--led);
+    font-size: 0.7em;
+}
+
+
+.f img{
+    width: 30px;
+    margin: 5px;
+}
+
+
+.last{
+    margin-bottom: 100px;
+}
+/*RODAPÉ*/
+
+
+
+/*TELA DE LOADING*/
+#loadingframe {
+    position: fixed;
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 105vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+
+.loadinganimation {
+    width: 15vw;
+    object-fit: cover;
+}
+
+
+.loadinglogo {
+    width: 100%;
+    animation: logopulsando 2.44s infinite;
+}
+
+
+@keyframes logopulsando {
+    0%      {opacity: 0;}
+    100%    {opacity: 1;}
+}
+
+/*TELA DE LOADING*/
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 500px){
+    body {
+    font-size: 0.8em;
+}
+}
+
+
+@media (max-width: 970px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+.loadinganimation {
+    width: 30vw;
+}
+
+
+main {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+
+.caracteristica {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.caracteristica h1,
+.caracteristica p{
+    width: 100%;
+}
+
+
+article {
+    width: 100%;
+}
+
+
+.txtprinch1 {
+    width: 100%;
+    font-size: 1.5em;
+}
+
+
+.imagemchamada,
+.imagemchamada1,
+.imagemchamada2 {
+    width: 90%;
+}
+
+
+#headline1 {
+    flex-direction: column-reverse;
+}
+
+
+#headline2 {
+    flex-direction: column;
+}
+
+
+.frames {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.txtprinc {
+    width: 100%;
+    height: 80%;
+    padding: 2%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+#color {
+    position: relative;
+}
+
+
+.headline {
+    margin-top: 5%;
+    background: linear-gradient(to right, rgba(189, 189, 189, 0), rgb(255, 255, 255) );
+    width: 94%;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/*MENU HAMBURGER*/
+    svg {
+        background-color: black;
+        fill: var(--led);
+    }
+
+
+
+    svg:hover {
+        background-color: var(--led);
+        box-shadow: 5px 5px 5px var(--lilacc2);
+        fill: black;
+    }
+
+
+    .wmenuside {
+        background-color: black;
+    }
+
+
+    .swm1 {
+        color: var(--led);
+        text-shadow: 1px 1px 2px var(--lilacc2);
+        }
+
+
+    .swm2 {
+        color: var(--led);
+        text-shadow: 1px 1px 2px var(--lilacc2);
+        }
+
+
+    .swm1:hover {
+        background-color: var(--led);
+        color: black;
+        box-shadow: 5px 5px 5px var(--lilacc2);
+        }
+
+
+    .swm2:hover {
+        background-color: var(--led);
+        color: black;
+        box-shadow: 5px 5px 5px var(--lilacc2);
+    }
+
+/*LISTA DE PROJETOS*/
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: black;
+}
+#listaPROJETOSd:hover a,
+#listaPROJETOSm:hover a{
+    color: black;
+}
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    color: var(--led);
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--led);
+}
+/*LISTA DE PROJETOS*/
+/*MENU HAMBURGER*/
+}
+/*MEDIA QUERIES*/

@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--cortextocaixa);
+    list-style: none;
+}
+
+
+:root {
+    --cortextocaixa : rgb(97, 97, 97);
+    --cortextocaixa1 : rgb(235, 235, 235);
+    --cortextocaixa2 : rgb(48, 48, 48);
+    --corsombracaixa : rgba(0, 0, 0, 0.322);
+    --corhover : rgba(0, 0, 0, 0.322);
+    --cortextohover : rgb(201, 201, 201);
+    --stroke: black;
+}
+
+
+body {
+    position: relative;
+    font: normal 600 1em "Oswald";
+    width: 100vw;
+    color: var(--cortextocaixa1);
+    overflow-x: hidden;
+    text-shadow: 5px 5px 5px var(--corsombracaixa);
+}
+
+
+article {
+    position: relative;
+    overflow: hidden;
+    margin-right: calc(5% + 10px);
+    margin-left: calc(2% + 10px);
+    max-width: 1920px;
+    max-height: 1080px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+}
+
+
+.l {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+.r {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+
+.tela {
+    position: relative;
+    top: 100px;
+}
+
+
+.imagens {
+    display: flex;
+    width: 100%;
+}
+
+
+.midias {
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.titulo {
+    position: absolute;
+    font-size: 2em;
+    z-index: 3;
+    padding: 10px;
+    color: var(--cortextocaixa1);
+}
+
+
+.texto {
+    position: absolute;
+    font-size: 1em;
+    width: 100%;
+    z-index: 3;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    font-weight: 300;
+    color: var(--cortextocaixa1);
+}
+
+
+.texto p {
+    color: var(--cortextocaixa1);
+}
+
+
+img, video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+button {
+    position: relative;
+    top: 35%;
+    z-index: 2;
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: rgba(255, 255, 255, 0);
+    box-shadow: 3px 3px 5px var(--corsombracaixa);
+}
+
+
+button, .titulo, .texto {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.wall {
+    position: fixed;
+    scale: 1.5;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+#SOBRE {
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    width: 60%;
+    padding: 2%;
+    pointer-events: none;
+}
+
+
+#SOBRE h1 {
+    color: var(--cortextocaixa1);
+    margin-bottom: 1em;
+    text-indent: 2em;
+}
+
+
+#SOBRE p,
+#SOBRE2 p,
+#SOBRE br,
+#SOBRE2 br {
+    line-height: 1.6em;
+    text-indent: 2em;
+}
+
+
+.sobre1 {
+    color: var(--cortextocaixa1);
+    font-weight: 200;
+    font-size: 1.4em;
+}
+
+
+#SOBRE2 {
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    width: 60%;
+    padding: 2%;
+    pointer-events: none;
+    transform: translateX(50%);
+}
+
+
+#SOBRE2 h1 {
+    color: var(--cortextocaixa1);
+    margin-bottom: 1em;
+    text-indent: 2em;
+}
+
+
+.sobre2 {
+    color: var(--cortextocaixa1);
+    font-weight: 200;
+    font-size: 1.4em;
+}
+
+
+i {
+    color: var(--cortextocaixa1);
+}
+
+.WMENU {
+    background-color: var(--cor4);
+}
+
+
+.wmenu1 {
+    color: var(--cortextocaixa);
+    text-shadow: 2px 2px 2px var(--corsombracaixa);
+}
+
+
+.wm1 {
+    color: var(--cortextocaixa);
+    text-shadow: 1px 1px 2px var(--corsombracaixa);
+}
+
+
+.wm2 {
+    color: var(--cortextocaixa);
+    text-shadow: 1px 1px 2px var(--corsombracaixa);
+}
+
+
+.wm1:hover {
+    background-color: var(--cortextocaixa);
+    color:var(--cortextohover);
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+}
+
+
+.wm2:hover {
+    background-color: var(--cortextocaixa);
+    color: var(--cortextohover);
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+}
+
+
+.homebotao {
+    color: var(--cortextocaixa);
+}
+
+
+
+.homebotao:hover {
+    background-color: var(--cortextocaixa);
+    border-radius: 10px;
+    color: var(--cortextohover);
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+}
+
+
+.homebotao:hover h1{
+    color: var(--cortextohover);
+}
+
+
+.homebotao:hover h2{
+    color: var(--cortextohover);
+}
+
+
+/*MENU HAMBURGER*/
+.swm1, .swm2 {
+    display: none;
+}
+
+
+
+svg {
+    display: none;
+}
+/*MENU HAMBURGER*/
+
+
+
+
+
+/*TELA DE LOADING*/
+#loadingframe {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.Wsloading {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    color: var(--cortextocaixa2);
+    z-index: 3;
+    justify-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.WELLINGTONshowcase.clicar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.logo1 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.Wstitulo {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.WELLINGTON1 {
+    display: flex;
+    font: normal 300 45px "Special Gothic Condensed One";
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+    animation: WELLINGTON 3s infinite;
+    color: var(--cortextocaixa2);
+}
+
+
+.showcase1 {
+    display: flex;
+    font: normal 300 38.8px "Tomorrow";
+    transform: translateY(-30%);
+    width: 100%;
+    justify-content: center;
+    animation: showcase 3s infinite;
+    color: var(--cortextocaixa2);
+}
+
+@keyframes WELLINGTON{
+    0%      {transform: translateX(130%);}
+    100%    {transform: translateX(0%);}  
+}
+
+@keyframes showcase{
+    0%      {transform: translateX(-130%) translateY(-30%);}
+    100%    {transform: translateX(0%) translateY(-30%);}   
+}
+/*TELA DE LOADING*/
+
+
+.material-symbols-outlined {
+    z-index: 2;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    transition: scale 0.5s ease-in-out;
+    color: var(--cortextocaixa1);
+}
+
+
+.material-symbols-outlined:hover {
+    scale: 1.2;
+}
+
+
+/*LISTA DE PROJETOS*/
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: var(--cortextocaixa1);
+}
+#listaPROJETOSd:hover a,
+#listaPROJETOSm:hover a{
+    color: var(--cortextocaixa1);
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--cortextocaixa2);
+}
+/*LISTA DE PROJETOS*/
+
+
+/*RODAPÉ*/
+#RODAPE {
+    position: absolute;
+    width: 30%;
+    height: 180px;
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    right: 0;
+    padding: 2%;
+    border-radius: 25px 0px 0px 25px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+footer#RODAPE {             
+    color: var(--cortextocaixa1);
+    font-size: 0.8em;
+}
+
+
+article:last-child{
+    margin-bottom: 200px;
+}
+
+
+.f img{
+    width: 30px;
+    margin: 5px;
+}
+
+/*RODAPÉ*/
+
+
+
+@media (max-width: 500px){
+    body {
+    font-size: 0.8em;
+}
+}
+
+@media (max-width: 520px){
+
+    .wall {
+    pointer-events: none;
+    object-fit: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    }
+
+/*MENU HAMBURGER*/
+    svg {
+    fill: var(--cortextocaixa);
+    }
+
+    svg:hover {
+    background-color: var(--cortextocaixa);
+    fill: var(--cortextohover);
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+    }
+
+    .wmenuside {
+    background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .wm1 {
+    display: none;
+    }
+
+    .wm2 {
+    display: none;
+    }
+
+    .WMENU {
+    max-height: 10em;
+    }
+
+    .swm1 {
+    color: var(--cortextocaixa);
+    text-shadow: 1px 1px 2px var(--corsombracaixa);
+    }
+
+    .swm2 {
+    color: var(--cortextocaixa);
+    text-shadow: 1px 1px 2px var(--corsombracaixa);
+    }
+
+    .swm1:hover {
+    background-color: var(--cortextocaixa);
+    color: var(--cortextohover);
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+    }
+
+    .swm2:hover {
+    background-color: var(--cortextocaixa);
+    color: var(--cortextohover);
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+    }
+/*MENU HAMBURGER*/
+
+}

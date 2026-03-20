@@ -1,0 +1,85 @@
+/*TELA DE LOADING*/
+#loadingframe {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.Wsloading {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    color: var(--cortextocaixa2);
+    z-index: 3;
+    justify-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.WELLINGTONshowcase.clicar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.logo1 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.Wstitulo {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.WELLINGTON1 {
+    display: flex;
+    font: normal 300 45px "Special Gothic Condensed One";
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+    animation: WELLINGTON 3s infinite;
+    color: var(--cortextocaixa2);
+}
+
+
+.showcase1 {
+    display: flex;
+    font: normal 300 38.8px "Tomorrow";
+    transform: translateY(-30%);
+    width: 100%;
+    justify-content: center;
+    animation: showcase 3s infinite;
+    color: var(--cortextocaixa2);
+}
+
+@keyframes WELLINGTON{
+    0%      {transform: translateX(130%);}
+    100%    {transform: translateX(0%);}  
+}
+
+@keyframes showcase{
+    0%      {transform: translateX(-130%) translateY(-30%);}
+    100%    {transform: translateX(0%) translateY(-30%);}   
+}
+/*TELA DE LOADING*/

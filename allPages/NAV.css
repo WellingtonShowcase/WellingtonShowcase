@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.WMENU {
+    display: flex;
+    position: fixed;
+    flex-wrap: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    min-height: 90px;
+    z-index: 100;
+}
+
+
+.wmenu1 {
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+
+.wmenu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative; 
+    font-size: 1.1em;
+    width: 100%;
+    padding-right: 5%;
+}
+
+
+.wm1 {
+    text-decoration: none;
+    margin: 2px;
+    padding: 10px;
+}
+
+
+.wm2 {
+    text-decoration: none;
+    margin: 1px;
+    padding: 10px;
+}
+
+
+.wm1:hover {
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.4s ease-in-out;
+}
+
+
+.wm2:hover {
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.4s ease-in-out;
+}
+
+
+.WELLINGTON {
+    font: normal 300 20px "Special Gothic Condensed One";
+}
+
+
+.showcase {
+    font: normal 300 17.8px "Tomorrow";
+    justify-content: center;
+    transform: translateY(-30%);
+}
+
+
+.homebotao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;
+}
+
+
+
+.homebotao:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.4s ease-in-out;
+}
+
+
+#listaPROJETOSd,
+#listaPROJETOSm {
+    cursor: pointer;
+    flex-direction: column;
+}
+
+
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    width: 100%;
+}
+
+
+#listaPROJETOSd li,
+#listaPROJETOSm li {
+    font-size: 0.8em;
+    padding: 2px;
+    list-style: none;
+    display: none;
+}
+
+
+/*MENU HAMBURGER*/
+.swm1, .swm2 {
+    display: none;
+}
+
+
+
+svg {
+    display: none;
+}
+/*MENU HAMBURGER*/
+
+
+
+@media (max-width: 520px){
+
+    /*MENU HAMBURGER*/
+    svg {
+    display: flex;
+    }
+
+
+
+    svg:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.4s ease-in-out;
+    }
+
+
+    .wmenuside {
+    display: none;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 999;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 1.2em;
+    overflow-y: auto;
+    }
+
+
+    .wm1 {
+    display: none;
+    }
+
+
+    .wm2 {
+    display: none;
+    }
+
+
+    .WMENU {
+    max-height: 10em;
+    }
+
+
+    .swm1 {
+    text-decoration: none;
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+    }
+
+
+    .swm2 {
+    text-decoration: none;
+    margin: 1px;
+    padding: 10px;
+    display: flex;
+    }
+
+
+    .swm1:hover {
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.4s ease-in-out;
+    }
+
+
+    .swm2:hover {
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out,
+                box-shadow 0.4s ease-in-out;
+    }
+/*MENU HAMBURGER*/
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#loadingframe {
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loadinganimation {
+    width: 15vw;
+    object-fit: cover;
+}
+
+
+.loadinglogo {
+    width: 100%;
+    animation: logopulsando 2.44s infinite;
+}
+
+
+@keyframes logopulsando {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

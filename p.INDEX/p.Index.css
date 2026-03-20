@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+:root {
+    --cortextocaixa : rgb(97, 97, 97);
+    --cortextocaixa1 : rgb(226, 226, 226);
+    --cortextocaixa2 : rgb(48, 48, 48);
+    --corsombracaixa : rgba(0, 0, 0, 0.322);
+    --corhover : rgba(0, 0, 0, 0.89);
+    --cortextohover : rgb(201, 201, 201);
+    --stroke: black;
+}
+
+
+body {
+    font: normal 600 1em "Oswald";
+    width: 100vw;
+    color: var(--cortextocaixa1);
+    overflow-x: hidden;
+    text-shadow: 5px 5px 5px var(--corsombracaixa);
+}
+
+
+.mainmenu {
+    display: grid;
+    grid-template: repeat(9, 1fr)/ repeat(9, 1fr);
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.projetos {
+    display: flex;
+    grid-area: 1/1/-1/7;
+    object-fit: contain;
+    position: relative;  
+}
+
+
+.imagem {
+    position: absolute;
+    animation: galeria 7.5s infinite;
+    transition: filter 0.5s ease-in-out;
+    transition: z-index 0.1 ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+
+
+.projetos a:first-child .imagem    {z-index: 1;}
+.projetos a:nth-child(2) .imagem   {animation-delay: 2.5s;}
+.projetos a:nth-child(3) .imagem   {animation-delay: 5s;}
+
+
+.portifolio a:first-child .imagem    {z-index: 1;}
+.portifolio a:nth-child(2) .imagem   {animation-delay: 2.5s;}
+.portifolio a:nth-child(3) .imagem   {animation-delay: 5s;}
+
+
+@keyframes galeria {
+    0%                  {z-index: 0;}
+    50%                 {z-index: 1;}
+    100%                {z-index: 0;}
+}
+
+
+.projetos:hover .imagem{
+    filter: grayscale(100%) contrast(200%);
+    animation-play-state: paused;
+}
+
+
+.portifolio:hover .imagem{
+    filter: grayscale(100%) contrast(200%);
+    animation-play-state: paused;
+}
+
+
+.sobre:hover .imagem{
+    filter: grayscale(100%) contrast(200%);
+    animation-play-state: paused;
+}
+
+
+.projetos:hover {
+    cursor: pointer;
+}
+
+
+.sobre {
+    grid-area: 1/7/-5/-1;
+    z-index: 1;
+    position: relative;
+}
+
+
+.sobre img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+.portifolio {
+    grid-area: 6/7/-1/-1;
+    z-index: 1;
+    position: relative;
+}
+
+
+.portifolio img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.titulo {
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 5%;
+    font-size: 1.2em;
+    transition: opacity 0.5 ease-in-out;
+    padding: 20px;
+    width: 100%;
+    border-radius: 0px 0px 0px 30px;
+    pointer-events: none;
+    display: none;
+}
+
+
+.texto {
+    z-index: 2;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+    transition: opacity 0.5 ease-in-out;
+    padding: 20px;
+    border-radius: 0px 30px 0px 0px;
+    pointer-events: none;
+}
+
+
+#headPROJETOS {
+    position: absolute;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(5, 1fr);
+    width: 60%;
+    top: 50%;
+    left: 0;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+
+#headPROJETOS1 {
+    font-size: 1em;
+    font-weight: 300;
+    grid-area: 1 / 1 / -2 / -1;
+    align-content: end;
+}
+
+#fluidez {
+    font-size: 2em;
+    grid-area: 3 / 3 / -1 / -1;
+}
+
+
+#headSOBRE {
+    position: absolute;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(5, 1fr);
+    width: 70%;
+    top: 20%;
+    left: 0;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+
+#headSOBRE1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    grid-area: 1 / 1 / -2 / 5;
+    align-content: end;
+}
+
+#tudo {
+    font-size: 2em;
+    grid-area: 3 / 3 / -1 / -1;
+    align-content: start;
+}
+
+
+
+#headPORTIFOLIO {
+    position: absolute;
+    display: grid;
+    grid-template: repeat(10, 1fr)/ repeat(5, 1fr);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+
+#headPORTIFOLIO2 {
+    font-size: 1em;
+    font-weight: 300;
+    grid-area: 4 / 1 / 6 / -1;
+    align-content: end;
+    justify-items: start;
+}
+
+
+#variedade {
+    font-size: 1.2em;
+    grid-area: 1 / 1 / 5 / -1;
+    align-content: end;
+}
+
+#design {
+    font-size: 2.3em;
+    grid-area:  6 / 1 / -1 / -1;
+    align-content: start;
+}
+
+
+.projetos:hover .texto{
+    opacity: 1;
+}
+
+
+.portifolio:hover .texto{
+    opacity: 1;
+}
+
+
+.sobre:hover .texto{
+    opacity: 1;
+}
+
+
+.projetos:hover .titulo{
+    opacity: 1;
+}
+
+
+.portifolio:hover .titulo{
+    opacity: 1;
+}
+
+
+.sobre:hover .titulo{
+    opacity: 1;
+}
+
+
+.WELLINGTONshowcase {
+    display: flex;
+    flex-direction: row;
+    color: var(--cortextocaixa2);
+    position: relative;
+    grid-area: 1/1/-1/-1;
+    z-index: 3;
+    justify-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    padding: 2%;
+}
+
+
+.WELLINGTONshowcase.clicar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.WELLINGTONshowcasetitulo {
+    display: flex;
+    justify-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.WELLINGTONh {
+    font: normal 300 10em "Special Gothic Condensed One";
+}
+
+
+.showcaseh {
+    font: normal 300 8.9em "Tomorrow";
+    justify-content: center;
+    transform: translateY(-30%);
+}
+
+
+.logohead {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+    color: rgba(255, 255, 255, 0.048);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.wall {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+.botao {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+}
+
+
+.fundobotao {
+    position: absolute;
+}
+
+
+.botao img {
+    transform-style: preserve-3d;
+    object-fit: cover;
+    scale: 1.4;
+    filter: blur(5px) brightness(0.5);
+    animation: fundo 60s infinite;
+    pointer-events: none;
+}
+
+
+@keyframes fundo {
+    0%      {transform: rotateY(0deg) rotateX(0deg);}
+    50%     {transform: rotateY(-30deg) rotateX(10deg);}
+    100%    {transform: rotateY(0deg) rotateX(0deg);}
+}
+
+
+.botaoentrar {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    font-size: 2em;
+    box-shadow: 2px 2px 2px var(--corsombracaixa);
+    border-radius: 20px;
+    border-left: var(--cortextocaixa1) solid 1px;
+    border-top: var(--cortextocaixa1) solid 1px;
+    color: var(--cortextocaixa1);  
+    z-index: 2;    
+}
+
+
+.botaoentrar:hover { 
+    scale: 1.1;
+    text-align: center;
+    justify-items: center;
+    align-content: center;   
+    box-shadow: 5px 5px 5px var(--corsombracaixa);
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out;   
+}
+
+
+.WELLINGTON {
+    display: flex;
+    font: normal 300 45px "Special Gothic Condensed One";
+    width: 100%;
+    justify-content: center;
+}
+
+
+.showcase {
+    display: flex;
+    font: normal 300 38.8px "Tomorrow";
+    transform: translateY(-30%);
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+/*TELA DE LOADING*/
+#loadingframe {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+.Wsloading {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    color: var(--cortextocaixa2);
+    z-index: 3;
+    justify-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.WELLINGTONshowcase.clicar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.logo1 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.Wstitulo {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.WELLINGTON1 {
+    display: flex;
+    font: normal 300 45px "Special Gothic Condensed One";
+    width: 100%;
+    justify-content: center;
+    z-index: 2;
+    animation: WELLINGTON 3s infinite;
+    color: var(--cortextocaixa2);
+}
+
+
+.showcase1 {
+    display: flex;
+    font: normal 300 38.8px "Tomorrow";
+    transform: translateY(-30%);
+    width: 100%;
+    justify-content: center;
+    animation: showcase 3s infinite;
+    color: var(--cortextocaixa2);
+}
+
+@keyframes WELLINGTON{
+    0%      {transform: translateX(130%);}
+    100%    {transform: translateX(0%);}  
+}
+
+@keyframes showcase{
+    0%      {transform: translateX(-130%) translateY(-30%);}
+    100%    {transform: translateX(0%) translateY(-30%);}   
+}
+
+/*TELA DE LOADING*/
+
+
+
+@media (max-width: 520px){
+    .WELLINGTONshowcase {
+    display: flex;
+    flex-direction: column;
+    color: var(--cortextocaixa2);
+    position: relative;
+    grid-area: 1/1/-1/-1;
+    z-index: 3;
+    justify-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    padding: 2%;
+}
+
+
+.botao {
+    background-color: var(--cortextocaixa2);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.WELLINGTONshowcasetitulo {
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+}
