@@ -481,7 +481,13 @@ footer#RODAPE {
 @media (max-width: 500px){
     body {
     font-size: 0.8em;
+    }
+
+    #RODAPE {
+    bottom: 50px;
+    border-radius: 25px 0px 0px 25px;
 }
+
 }
 
 @media (max-width: 1100px) {
