@@ -134,6 +134,12 @@ button, .titulo, .texto {
 }
 
 
+.titulo,
+.texto {
+    pointer-events: none;
+}
+
+
 .wall {
     position: fixed;
     scale: 1.5;
