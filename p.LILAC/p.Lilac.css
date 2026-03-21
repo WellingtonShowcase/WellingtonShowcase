@@ -502,6 +502,13 @@ footer#RODAPE {
     }
 
 
+    #tela {
+        position: absolute;
+        width: 100vw;
+        height: 120vh;
+    }
+
+
     .lilacvideo {
         display: none;
     }
@@ -512,12 +519,11 @@ footer#RODAPE {
         visibility: visible;
         position: fixed;
         object-fit: cover;
-        width: 105svw;
-        height: 105svh;
+        width: 100vw;
+        height: 100vh;
         inset: 0;
         z-index: -1;
         overflow-y: hidden;
-        scale: 1.2;
     } 
 
 
