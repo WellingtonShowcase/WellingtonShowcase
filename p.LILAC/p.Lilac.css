@@ -28,7 +28,7 @@ body {
     margin: 0;
     background-image: url('midias/Lilac\ fundo.png');
     font: normal 600 1em "Oswald";  
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
@@ -498,7 +498,7 @@ footer#RODAPE {
 
 
     html, body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
 
@@ -567,7 +567,9 @@ footer#RODAPE {
         filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.8));
     }
 
-
+    #RODAPE {
+    border-radius: 25px 0px 0px 25px;
+    }
 
 }
 
