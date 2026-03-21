@@ -353,6 +353,7 @@ body {
 
 
 .botao {
+    position: relative;
     display: flex;
     width: 50%;
     height: 100%;
@@ -362,6 +363,7 @@ body {
     align-items: center;
     border-radius: 10px;
     background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    flex-direction: column;
 }
 
 
@@ -393,7 +395,7 @@ body {
     text-align: center;
     justify-items: center;
     align-content: center;
-    font-size: 2em;
+    font-size: 1.5em;
     box-shadow: 2px 2px 2px var(--corsombracaixa);
     border-radius: 20px;
     border-left: var(--cortextocaixa1) solid 1px;
@@ -430,6 +432,35 @@ body {
     justify-content: center;
 }
 
+
+#chamadaprincipal {
+    position: absolute;
+    display: grid;
+    grid-template: repeat(3, 1fr)/ repeat(3, 1fr);
+    color: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    height: 20%;
+    padding: 10%;
+    font-weight: 100;
+    font-size: 2.5em;
+    top: 0;
+    pointer-events: none;
+}
+
+
+#d {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+#m {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+#a {
+    grid-area: 3 / 3 / 4 / 4;
+}
 
 
 /*TELA DE LOADING*/
@@ -521,7 +552,7 @@ body {
 
 
 
-@media (max-width: 520px){
+@media (max-width: 680px){
     .WELLINGTONshowcase {
     display: flex;
     flex-direction: column;
@@ -559,5 +590,27 @@ body {
     align-content: center;
     justify-content: center;
 }
+}
 
+
+
+@media (max-width: 1200px){
+#chamadaprincipal {
+    font-size: 2em;
+    top: 25%;
+}
+}
+
+
+@media (max-width: 1000px){
+#chamadaprincipal {
+    font-size: 1.6em;
+}
+}
+
+
+@media (max-width: 700px){
+#chamadaprincipal {
+    font-size: 1.6em;
+}
 }
