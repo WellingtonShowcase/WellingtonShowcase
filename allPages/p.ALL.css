@@ -163,7 +163,6 @@ button, .titulo, .texto {
 #SOBRE br,
 #SOBRE2 br {
     line-height: 1.6em;
-    text-indent: 2em;
 }
 
 
@@ -441,7 +440,6 @@ article:last-child{
 }
 
 @media (max-width: 520px){
-
     .wall {
     pointer-events: none;
     object-fit: cover;
@@ -500,4 +498,17 @@ article:last-child{
     }
 /*MENU HAMBURGER*/
 
+}
+
+
+@media (max-width: 650px){
+    #SOBRE {
+    width: 90%;
+    transform: translateX(0);
+}
+
+    #SOBRE2 {
+    width: 90%;
+    transform: translateX(0);
+}
 }
