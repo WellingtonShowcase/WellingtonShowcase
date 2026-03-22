@@ -48,7 +48,6 @@ body {
     position: absolute;
     animation: galeria 7.5s infinite;
     transition: filter 0.5s ease-in-out;
-    transition: z-index 0.1 ease-in-out;
     width: 100%;
     height: 100%;
     z-index: 0;
@@ -67,8 +66,9 @@ body {
 
 
 @keyframes galeria {
-    0%                  {z-index: 0;}
-    50%                 {z-index: 1;}
+    0%                  {z-index: 1;}
+    33%                 {z-index: 1;}
+    34%                 {z-index: 0;}
     100%                {z-index: 0;}
 }
 
@@ -363,7 +363,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    background-image: url('midias/capa.jpg');
+    background-size: cover;
+    background-position: top;
     flex-direction: column;
 }
 
@@ -397,12 +399,14 @@ body {
     justify-items: center;
     align-content: center;
     font-size: 1.5em;
+    font-weight: 400;
     box-shadow: 2px 2px 2px var(--corsombracaixa);
     border-radius: 20px;
     border-left: var(--cortextocaixa1) solid 1px;
     border-top: var(--cortextocaixa1) solid 1px;
     color: var(--cortextocaixa1);  
-    z-index: 2;    
+    z-index: 2;
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));    
 }
 
 
