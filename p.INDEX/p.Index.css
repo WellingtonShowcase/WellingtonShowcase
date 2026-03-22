@@ -335,6 +335,7 @@ body {
     overflow: hidden;
     width: 80%;
     text-align: center;
+    align-items: center;
 }
 
 
@@ -609,8 +610,24 @@ body {
 }
 
 
+@media (max-width: 860px){
+.logohead {
+    width: 100%;
+}
+
+.WELLINGTONh {
+    font-size: 5em;
+}
+
+.showcaseh {
+    font-size: 4.45em;
+}
+}
+
+
 @media (max-width: 700px){
 #chamadaprincipal {
     font-size: 1.6em;
 }
+
 }
