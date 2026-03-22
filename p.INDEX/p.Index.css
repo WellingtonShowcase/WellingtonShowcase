@@ -366,6 +366,7 @@ body {
     background-image: url('midias/capa.jpg');
     background-size: cover;
     background-position: top;
+    background-position-x: 55%;
     flex-direction: column;
 }
 
@@ -634,4 +635,16 @@ body {
     font-size: 1.6em;
 }
 
+}
+
+
+@media (orientation: landscape) {
+    .botao {
+        background-position-y: center;
+    }
+
+
+    #headSOBRE {
+        top: -10%;
+    }
 }

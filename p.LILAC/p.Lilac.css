@@ -601,3 +601,10 @@ footer#RODAPE {
 }
 /*LISTA DE PROJETOS*/
 }
+
+
+@media (orientation: landscape) {
+    .lilacicon {
+        height: 15vh;
+    }
+}
