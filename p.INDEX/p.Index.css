@@ -363,10 +363,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-image: url('midias/capa.jpg');
-    background-size: cover;
-    background-position: top;
-    background-position-x: 55%;
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
     flex-direction: column;
 }
 

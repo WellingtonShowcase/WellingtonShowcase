@@ -607,4 +607,48 @@ footer#RODAPE {
     .lilacicon {
         height: 15vh;
     }
+
+}
+
+
+
+@media (orientation: landscape) and (max-width: 1000px) {
+    .imagem {
+        position: absolute;
+        transform-origin: center;
+        transform: translate(-50%, -50%) scale(0.7);
+        top: 50%;
+        left: 50%;
+    }
+}
+
+
+@media (orientation: landscape) and (max-width: 540px) {
+    .imagem {
+        position: absolute;
+        transform-origin: center;
+        transform: translate(-50%, -50%) scale(0.9);
+        top: 50%;
+        left: 50%;
+    }
+
+
+    .lilacicon {
+        top: -25%;
+    }
+
+
+    .texto {
+        position: absolute;
+        transform: translate(-25%, -50%) scale(0.5);
+    }
+}
+
+
+@media (orientation: portrait) and (max-width: 375px) {
+    .texto {
+        position: absolute;
+        transform-origin: center;
+        transform: translate(-10%, -50%) scale(0.8);
+    }
 }

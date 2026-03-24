@@ -142,8 +142,8 @@ button, .titulo, .texto {
 
 .wall {
     position: fixed;
-    scale: 1.5;
-    background-size: contain;
+    scale: 1;
+    background-size: cover;
     pointer-events: none;
     z-index: -1;
 }
