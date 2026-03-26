@@ -2,10 +2,10 @@ const arts = document.querySelectorAll("article");
 
 
 
-arts.forEach(info => {
+arts.forEach((artigo) => {
 
 
-        const info = document.querySelectorAll(".material-symbols-outlined");
+        const info = document.querySelector(".material-symbols-outlined");
         const titulo = artigo.querySelector('.titulo');
         const texto = artigo.querySelector('.texto');
         const focus = artigo.querySelectorAll("img, video");
@@ -35,13 +35,17 @@ arts.forEach(info => {
 
 
         function atualizarCarrossel(){
-            const lateral = imagens[0].clientWidth;
+            const largura = imagens[0].clientWidth;
             midias.style.transform = `translateX(-${index * largura}px)`;
 
             pontos.forEach(p => p.classList.remove("ativo"));
             if (pontos[index]) pontos[index].classList.add("ativo")
         }
 
+atualizarCarrossel();
+
+
+    if (info){
         info.addEventListener("click", (e) => {
             e.stopPropagation();
 
@@ -58,34 +62,39 @@ arts.forEach(info => {
         } else {
             titulo.style.opacity = 0;
             texto.style.opacity = 0;
-        focus.forEach(f => {
-            f.style.filter = "none";
-        });
+        focus.forEach((f) =>
+            (f.style.filter = "none"));
+        
     }
+
     ativado = !ativado;
+
     });
-});
+
+    }
 
 
 
 
 
 
-arts.forEach((article) => {
-const caixa = article.querySelector(".midias");
+const caixa = midias;
 const frame = article.querySelectorAll(".imagens > *");
 const prox = article.querySelector(".r");
 const ante = article.querySelector(".l");
-
-let index = 0;
 const total = frame.length;
 
-function slide(){
-    caixa.style.transform = `translateX(-${index * 100}%)`;
+function slide() {
+    const largura = imagens[0].clientWidth;
+    caixa.style.transform = `translateX(-${index * largura}px)`;
 }
 
+
+pontos.forEach(p => p.classList("ativo"));
+if (pontos[index]) pontos[index].classList.add("ativo");
+
 if (prox) {
-prox.addEventListener("click", (i) => {
+prox.addEventListener("click", () => {
     index = (index + 1) % total;
     slide()
 });
@@ -94,9 +103,9 @@ prox.addEventListener("click", (i) => {
 
 
 if (ante) {
-ante.addEventListener("click", (i) => {
+ante.addEventListener("click", () => {
     index = (index - 1 + total) % total;
-    slide()
+    slide();
 });
 
 }
