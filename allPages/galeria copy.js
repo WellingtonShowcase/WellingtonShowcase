@@ -2,22 +2,21 @@ const arts = document.querySelectorAll("article");
 
 
 
-infos.forEach(info => {
-    let ativado = false;
-    info.addEventListener("click", () => {
+arts.forEach(info => {
 
-        const infos = document.querySelectorAll("article .material-symbols-outlined");
+
+        const info = document.querySelectorAll(".material-symbols-outlined");
         const titulo = artigo.querySelector('.titulo');
         const texto = artigo.querySelector('.texto');
         const focus = artigo.querySelectorAll("img, video");
         const midias = artigo.querySelector(".imagens");
-        const imagens = aritigo.querySelectorAll(".imagens img, .imagens video");
-        const pontos = aritigo.querySelector(".pontos");
+        const imagens = artigo.querySelectorAll(".imagens img, .imagens video");
+        const contpontos = artigo.querySelector(".pontos");
 
-        let index = 0
-        let ativado = false
+        let index = 0;
+        let ativado = false;
 
-        pontos.innerHTML = "";
+        contpontos.innerHTML = "";
 
         imagens.forEach((_, i) => {
             const ponto = document.createElement("span");
@@ -29,15 +28,15 @@ infos.forEach(info => {
                 atualizarCarrossel();
             });
 
-            pontosContainer.appendChild(ponto);
+            contpontos.appendChild(ponto);
         });
 
-        const pontos = pontosContainer.querySelectorAll(".ponto");
+        const pontos = contpontos.querySelectorAll(".ponto");
 
 
         function atualizarCarrossel(){
-            const lateral = imagens{0}.clientWidth;
-            midias.style.transform = 'translateX(-${index * largura}px)';
+            const lateral = imagens[0].clientWidth;
+            midias.style.transform = `translateX(-${index * largura}px)`;
 
             pontos.forEach(p => p.classList.remove("ativo"));
             if (pontos[index]) pontos[index].classList.add("ativo")
@@ -45,11 +44,12 @@ infos.forEach(info => {
 
         info.addEventListener("click", (e) => {
             e.stopPropagation();
-        })
+
 
         if (!ativado) {
             titulo.style.opacity = 1;
             texto.style.opacity = 1;
+
         focus.forEach(f => {
             f.style.filter = "blur(5px) brightness(30%)";
             f.style.transition = "filter 0.3s ease-in-out";
@@ -62,7 +62,7 @@ infos.forEach(info => {
             f.style.filter = "none";
         });
     }
-    ativado = !ativado
+    ativado = !ativado;
     });
 });
 
@@ -78,19 +78,27 @@ const prox = article.querySelector(".r");
 const ante = article.querySelector(".l");
 
 let index = 0;
-const framestotal = frame.length;
+const total = frame.length;
 
 function slide(){
     caixa.style.transform = `translateX(-${index * 100}%)`;
 }
 
+if (prox) {
 prox.addEventListener("click", (i) => {
-    index = (index + 1) % framestotal;
+    index = (index + 1) % total;
     slide()
 });
 
+}
+
+
+if (ante) {
 ante.addEventListener("click", (i) => {
-    index = (index - 1 + framestotal) % framestotal;
+    index = (index - 1 + total) % total;
     slide()
 });
+
+}
+
 });
