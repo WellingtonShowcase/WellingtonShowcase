@@ -29,17 +29,32 @@ body {
 }
 
 
+#secaoportfolio {
+    background-image: url('midias/fundowall1.webp');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+
+#secaosobre {
+    background-image: url('midias/fundowall2.webp');
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+
 article {
     position: relative;
     overflow: hidden;
     margin-right: calc(5% + 10px);
     margin-left: calc(2% + 10px);
-    max-width: 1920px;
+    max-width: 100%;
     max-height: 1080px;
     cursor: pointer;
-    border-radius: 10px;
     margin-bottom: 50px;
-    box-shadow: 5px 5px 5px var(--corsombracaixa);
+    
 }
 
 
@@ -95,7 +110,7 @@ article {
     width: 100%;
     z-index: 3;
     left: 0;
-    bottom: 0;
+    bottom: 10%;
     padding: 5px;
     font-weight: 300;
     color: var(--cortextocaixa1);
@@ -161,6 +176,12 @@ button, .titulo, .texto {
     color: var(--cortextocaixa1);
     margin-bottom: 1em;
     text-indent: 2em;
+}
+
+
+#SOBRE,
+#SOBRE2 {
+    border-radius: 10px;
 }
 
 
@@ -280,8 +301,12 @@ svg {
 /*MENU HAMBURGER*/
 
 
-
-
+.carrossel2 {
+    position: relative;
+    max-height: 100%;
+    width: 100vw;
+    background-color: black;
+}
 
 /*TELA DE LOADING*/
 #loadingframe {
@@ -321,6 +346,34 @@ svg {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+
+.pontos {
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.ponto {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: var(--cortextocaixa2) solid 2px;
+    transition: 0.3s;
+}
+
+.ponto.ativo {
+    background-color: var(--cortextocaixa1);
+    transform: scale(1.2);
 }
 
 
