@@ -343,18 +343,19 @@ footer#RODAPE {
 }
 
 
-.focusload {
+#focusload {
     width: 20vw;
     position: absolute;
-    fill: url('#rgFocus');
     display: flex;
+    animation: logopulsando 1.5s infinite;
 }
 
-
-.focusload path {
-    transform: scale(0.2);
-    transform-origin: center;
+@keyframes logopulsando {
+    0%          {opacity: 0;}
+    50%         {opacity: 1;}
+    100%        {opacity: 0;}
 }
+
 /*TELA DE LOADING*/
 
 

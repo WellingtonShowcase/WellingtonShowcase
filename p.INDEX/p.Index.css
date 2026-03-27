@@ -312,12 +312,12 @@ body {
 
 
 .WELLINGTONh {
-    font: normal 300 10em "Special Gothic Condensed One";
+    font: normal 300 3em "Special Gothic Condensed One";
 }
 
 
 .showcaseh {
-    font: normal 300 8.9em "Tomorrow";
+    font: normal 300 2.67em "Tomorrow";
     justify-content: center;
     transform: translateY(-30%);
 }
@@ -329,15 +329,12 @@ body {
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 5%;
+    left: 5%;
     z-index: 2;
     pointer-events: none;
-    color: rgba(255, 255, 255, 0.048);
+    color: var(--cortextocaixa1);
     overflow: hidden;
-    width: 80%;
-    text-align: center;
     align-items: center;
 }
 
@@ -570,6 +567,12 @@ body {
     opacity: 1;
     transition: all 0.5s ease-in-out;
     padding: 2%;
+    overflow-x: hidden;
+}
+
+
+.wall {
+    width: 300%;
 }
 
 
@@ -599,6 +602,46 @@ body {
 }
 
 
+#inicial {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--cortextocaixa1);
+}
+
+
+#autor {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+}
+
+#autor h3 {
+    font-size: 0.8em;
+    font-weight: 100;
+}
+
+#autor h2 {
+    font-size: 1em;
+    font-weight: 100;
+}
+
+
+#headinicial {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 2%;
+    right: 2%;
+    text-align: right;
+}
+
+
+#headinicial h1{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
 
 @media (max-width: 1200px){
 #chamadaprincipal {
@@ -617,15 +660,17 @@ body {
 
 @media (max-width: 860px){
 .logohead {
-    width: 100%;
+    position: absolute;
+    top: 2%;
+    left: 5%;
 }
 
 .WELLINGTONh {
-    font-size: 5em;
+    font-size: 2em;
 }
 
 .showcaseh {
-    font-size: 4.45em;
+    font-size: 1.78em;
 }
 }
 
@@ -646,12 +691,5 @@ body {
 
     #headSOBRE {
         top: -10%;
-    }
-}
-
-
-@media (orientation: portrait) {
-    .wall {
-
     }
 }

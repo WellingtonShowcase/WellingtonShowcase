@@ -51,7 +51,7 @@
        patternUnits="userSpaceOnUse"
        width="10"
        height="10"
-       style="fill:rgba(119, 255, 71, 0.4)"
+       style="fill:rgba(120, 255, 71, 0.7)"
        patternTransform="translate(485,225) scale(2)"
        preserveAspectRatio="xMidYMid"
        id="pattern9"
