@@ -156,9 +156,7 @@ article {
     overflow: hidden;
     width: 60%;
     cursor: pointer;
-    border-radius: 10px;
     margin-bottom: 50px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
     object-fit: cover;
 }
 
@@ -174,6 +172,12 @@ article {
 .midias {
     display: flex;
     transition: transform 0.5s ease-in-out;
+}
+
+
+article:hover {
+    filter: brightness(85%);
+    transition: filter 0.5s ease-in-out;
 }
 
 
@@ -197,6 +201,32 @@ article {
 }
 
 
+.setas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 
+            inset 10px 0 10px -5px rgba(0, 0, 0, 0.5),
+            inset -10px 0 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+#arrL {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#arrR {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
 .imagens {
     display: flex;
     width: 100%;
@@ -205,7 +235,6 @@ article {
 
 img {
     object-fit: cover;
-    border-radius: 10px;
 }
 
 

@@ -5,7 +5,7 @@ const arts = document.querySelectorAll("article");
 arts.forEach((artigo) => {
 
 
-        const info = document.querySelector(".material-symbols-outlined");
+        const info = artigo.querySelector(".material-symbols-outlined");
         const titulo = artigo.querySelector('.titulo');
         const texto = artigo.querySelector('.texto');
         const focus = artigo.querySelectorAll("img, video");
@@ -34,7 +34,7 @@ arts.forEach((artigo) => {
         const pontos = contpontos.querySelectorAll(".ponto");
 
 
-        function atualizarCarrossel(){
+        function atualizarCarrossel() {
             const largura = imagens[0].clientWidth;
             midias.style.transform = `translateX(-${index * largura}px)`;
 
@@ -50,9 +50,9 @@ atualizarCarrossel();
             e.stopPropagation();
 
 
-        if (!ativado) {
-            titulo.style.opacity = 1;
-            texto.style.opacity = 1;
+    if (!ativado) {
+        titulo.style.opacity = 1;
+        texto.style.opacity = 1;
 
         focus.forEach(f => {
             f.style.filter = "blur(5px) brightness(30%)";
@@ -62,8 +62,7 @@ atualizarCarrossel();
         } else {
             titulo.style.opacity = 0;
             texto.style.opacity = 0;
-        focus.forEach((f) =>
-            (f.style.filter = "none"));
+            focus.forEach(f => f.style.filter = "none");
         
     }
 
@@ -79,24 +78,25 @@ atualizarCarrossel();
 
 
 const caixa = midias;
-const frame = article.querySelectorAll(".imagens > *");
-const prox = article.querySelector(".r");
-const ante = article.querySelector(".l");
+const frame = artigo.querySelectorAll(".imagens > *");
+const prox = artigo.querySelector(".r");
+const ante = artigo.querySelector(".l");
 const total = frame.length;
 
 function slide() {
     const largura = imagens[0].clientWidth;
     caixa.style.transform = `translateX(-${index * largura}px)`;
-}
 
 
-pontos.forEach(p => p.classList("ativo"));
+
+pontos.forEach(p => p.classList.remove("ativo"));
 if (pontos[index]) pontos[index].classList.add("ativo");
+}
 
 if (prox) {
 prox.addEventListener("click", () => {
     index = (index + 1) % total;
-    slide()
+    slide();
 });
 
 }
