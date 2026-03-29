@@ -45,6 +45,43 @@ body {
 }
 
 
+#secao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: calc(5% + 10px);
+    margin-left: calc(2% + 10px);
+    margin-bottom: 8%;
+    height: auto;
+    background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--corsombracaixa);
+    padding: 1%;
+}
+
+
+#secao h1,
+#secao h2 {
+    color: var(--cortextocaixa1);
+    text-shadow: none;
+}
+
+
+#secao h1 {
+    font-weight: 400;
+    margin-left: 5%;
+    font-size: 2em;
+}
+
+
+#secao h2 {
+    font-weight: 200;
+    margin-left: 5%;
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
+
+
 article {
     position: relative;
     overflow: hidden;
@@ -176,6 +213,7 @@ button, .titulo, .texto {
     width: 60%;
     padding: 2%;
     pointer-events: none;
+    box-shadow: 3px 3px 5px var(--corsombracaixa);
 }
 
 
@@ -213,6 +251,7 @@ button, .titulo, .texto {
     padding: 2%;
     pointer-events: none;
     transform: translateX(50%);
+    box-shadow: 3px 3px 5px var(--corsombracaixa);
 }
 
 
