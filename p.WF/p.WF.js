@@ -38,3 +38,24 @@ window.addEventListener("keydown", (e) => {
         wf(Math.max(index - 1, 0));
     }
 });
+
+
+let y = 0;
+
+window.addEventListener("touchstart", (e) => {
+    y = e.touches[0].clientY;
+});
+
+window.addEventListener("touchend", (e) => {
+    if (isScrolling) return;
+
+    let fimY = e.changedTouches[0].clientY;
+    let d = y - fimY;
+
+    if (Math.abs(d) < 50) return;
+    if (d > 0) {
+        wf(Math.min(index + 1, tela.length - 1));
+    } else {
+        wf(Math.max(index - 1, 0));
+    }
+});
