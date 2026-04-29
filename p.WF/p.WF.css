@@ -18,6 +18,7 @@ body {
     font: normal 600 1em "Oswald";
     transition: background-color 0.8s ease-in-out;
     overflow-x: hidden;
+    background: radial-gradient(var(--cor2),var(--cor3),var(--cor2));
 }
 
 
