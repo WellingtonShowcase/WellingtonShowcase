@@ -598,6 +598,11 @@ article {
 }*/
 
 
+@media (min-width: 900px){
+    body {overflow: hidden;
+    }
+}
+
 
 
 @media (orientation: portrait) {
@@ -642,6 +647,12 @@ article {
     }
 
 
+    #LOGO {
+    top: 50%;
+    right: 0%;
+    }
+
+    
     .f img {
         height: 5.9vh;
     }
