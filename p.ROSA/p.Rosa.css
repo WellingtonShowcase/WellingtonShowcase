@@ -24,6 +24,7 @@ body {
     scroll-snap-type: y mandatory;
     font: normal 600 1em "Oswald";
     transition: background-color 0.8s ease-in-out;
+    background-image: url('ROSA/ROSAvideo-00048.webp');
 }
 
 
@@ -173,6 +174,8 @@ header {
     pointer-events: none;
     color: var(--letra3);
     font-size: 4vh;
+    width: 300px;
+    height: 100px;
 }
 
 
@@ -186,7 +189,7 @@ header {
 #rosa2 {
     position: fixed;
     top: 50%;
-    right: 20%;
+    right: 5%;
 }
 
 
@@ -235,8 +238,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     overflow: hidden;
 }
@@ -248,6 +251,141 @@ header {
     object-fit: cover;
     pointer-events: none;
 }
+
+
+
+/*GALERIA*/
+
+#ROSAgaleria {
+    position: fixed;
+    background-color: black;
+    height: 10vh;
+    width: 15vw;
+    top: 25%;
+    right: 25%;
+    pointer-events: none;
+}
+
+
+#ROSAgaleria.visivel {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+
+#ROSAgaleria img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+.l {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    box-shadow: 
+            inset 10px 0 10px -5px rgba(0, 0, 0, 0.5);        
+}
+
+
+.r {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    box-shadow:
+            inset -10px 0 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+article {
+    background-color: white;
+    position: absolute;
+    bottom: -375%;
+    left: 5%;
+    overflow: hidden;
+    width: 80vw;
+    height: auto;
+    margin-right: calc(2% + 10px);
+    margin-left: calc(2% + 10px);
+    pointer-events: none;
+}
+
+
+#galeria {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+#galeria.ativado {
+    opacity: 1;
+    pointer-events: all;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.imagens {
+    display: flex;
+    width: 100%;
+}
+
+
+.imagens img{
+    background-color: var(--cor1);
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+
+.midias {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.pontos {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 500px;
+    height: 15px;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-around;
+    pointer-events: none;
+    z-index: 1001;
+}
+
+
+.pontos .ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: var(--letra3) solid 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pontos .ponto.ativo {
+    background-color: var(--cortextocaixa1);
+    transform: scale(1.5);
+}
+/*GALERIA*/
+
 
 
 /*RODAPÉ*/
@@ -273,7 +411,7 @@ header {
 
 
 .f>img{
-    width: 5vh;
+    width: 2em;
 }
 
 /*RODAPÉ*/
@@ -286,8 +424,46 @@ header {
     #ROSAlogo{
     height: 7vh;
     }
+}
 
 
+
+
+@media (max-width: 1000px){
+    .f>img{
+    width: 2em;
+}
+}
+
+
+
+@media (orientation: portrait){
+    #rodape {
+    right: 30%;
+    }
+
+
+    .f>img{
+    width: 4em;
+    }
+
+
+    #rosa1 {
+    top: 25%;
+    left: 10%;
+    }
+
+
+    #rosa2 {
+    top: 50%;
+    left: 10%;
+    }
+
+
+    #rosa3 {
+    top: 75%;
+    left: 10%;
+    }
 
 
 
