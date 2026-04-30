@@ -172,28 +172,28 @@ header {
     transition: opacity 0.7s ease-in-out;
     pointer-events: none;
     color: var(--letra3);
-    font-size: 8vh;
+    font-size: 4vh;
 }
 
 
 #rosa1 {
     position: fixed;
-    top: 20%;
+    top: 35%;
     right: 5%;
 }
 
 
 #rosa2 {
     position: fixed;
-    top: 40%;
-    right: 25%;
+    top: 50%;
+    right: 20%;
 }
 
 
 #rosa3 {
     position: fixed;
-    top: 60%;
-    right: 45%;
+    top: 65%;
+    right: 5%;
 }
 
 
@@ -217,9 +217,9 @@ header {
 
 #ROSAlogo{
     position: absolute;
-    width: 20vw;
-    top: 50%;
-    left: 50%;
+    height: 10vh;
+    top: 40%;
+    left: 70%;
     filter: drop-shadow(7px 7px 4px var(--letra2));
     transform: translate(-50%, -50%);
 }
@@ -235,8 +235,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     z-index: -1;
     overflow: hidden;
 }
@@ -255,12 +255,14 @@ header {
     position: fixed;
     display: flex;
     bottom: 2%;
-    right: 5%;
-    width: 20%;
-    height: 7%;
+    right: 15%;
+    width: 7%;
+    height: 15%;
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
     pointer-events: none;
+    align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -270,14 +272,8 @@ header {
 }
 
 
-.f {
-    width: 20%;
-}
-
-
 .f>img{
-    width: 100%;
-    padding: 8%;
+    width: 5vh;
 }
 
 /*RODAPÉ*/
@@ -286,6 +282,13 @@ header {
     body {
     font-size: 0.8em;
     }
+
+    #ROSAlogo{
+    height: 7vh;
+    }
+
+
+
 
 
 }
