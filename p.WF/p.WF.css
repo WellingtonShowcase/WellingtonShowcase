@@ -10,6 +10,7 @@
     --cor1 : rgb(243, 243, 243);
     --cor2 : rgba(121, 120, 120, 0.233);
     --cor3 : rgb(165, 165, 165);
+    --cor4 : rgba(165, 165, 165, 0.7);
 
 }
 
@@ -102,7 +103,7 @@ body {
 
 
     .wmenuside {
-        background-color: var(--cor2);
+        background-color: var(--cor4);
     }
 
 
@@ -145,7 +146,7 @@ body {
 }
 #listaPROJETOSd:hover a,
 #listaPROJETOSm:hover a{
-    color: rgba(0, 0, 0, 0);
+    color: var(--cor3);
 }
 #listaPROJETOSd a,
 #listaPROJETOSm a{
@@ -408,7 +409,7 @@ header {
     position: absolute;
     display: flex;
     justify-content: space-around;
-    right: 15%;
+    right: 20%;
     bottom: 12%;
     width: 12vw;
     height: 8vh;
@@ -452,8 +453,8 @@ header {
 
 article {
     position: absolute;
-    top: 50%;
-    left: 47%;
+    top: 46%;
+    left: 46%;
     transform: translate(-50%, -50%);
     overflow: hidden;
     width: 80vw;
@@ -661,3 +662,106 @@ article {
         height: 5.9vh;
     }
 }
+
+
+
+
+
+@media (max-height: 520px){
+    .f img {
+        height: 10vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*TELA DE LOADING*/
+#loadingframe {
+    position: fixed;
+    background: linear-gradient(-45deg, var(--cor1), var(--cor3), var(--cor3));
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.Wsloading {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    z-index: 3;
+    justify-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#LOADING {
+    width: 50%;
+    overflow: hidden;
+}
+
+
+.Wstitulo {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    width: 100vw;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#logoWS {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    z-index: 2;
+    animation: wslogo 3s infinite;
+}
+
+
+#logoWSa {
+    display: flex;
+    justify-content: center;
+    animation: wslogoa 3s infinite;
+}
+
+
+#logoWS img{
+    width: 50%;
+}
+
+
+#logoWSa img{
+    width: 50%;
+}
+
+
+@keyframes wslogo{
+    0%      {transform: translateX(130%);}
+    100%    {transform: translateX(0%);}  
+}
+
+@keyframes wslogoa{
+    0%      {transform: translateX(-120%) translateY(-90%);}
+    100%    {transform: translateX(4%) translateY(-90%);}   
+}
+/*TELA DE LOADING*/
