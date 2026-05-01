@@ -20,11 +20,13 @@
     height: 400vh;
 }
 
+
 body {
     scroll-snap-type: y mandatory;
     font: normal 600 1em "Oswald";
     transition: background-color 0.8s ease-in-out;
     background-image: url('ROSA/ROSAvideo-00048.webp');
+    overflow: hidden;
 }
 
 
@@ -258,12 +260,20 @@ header {
 
 #ROSAgaleria {
     position: fixed;
-    background-color: black;
-    height: 10vh;
+    background-color: rgb(255, 255, 255);
     width: 15vw;
     top: 25%;
     right: 25%;
     pointer-events: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+    transition: scale 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+
+#ROSAgaleria:hover {
+    scale: 1.05;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -308,8 +318,8 @@ header {
 
 article {
     background-color: white;
-    position: absolute;
-    bottom: -375%;
+    position: fixed;
+    top: 5%;
     left: 5%;
     overflow: hidden;
     width: 80vw;
@@ -317,6 +327,7 @@ article {
     margin-right: calc(2% + 10px);
     margin-left: calc(2% + 10px);
     pointer-events: none;
+    z-index: 1000;
 }
 
 
@@ -381,7 +392,7 @@ article {
 }
 
 .pontos .ponto.ativo {
-    background-color: var(--cortextocaixa1);
+    background-color: var(--cor1);
     transform: scale(1.5);
 }
 /*GALERIA*/
@@ -401,6 +412,7 @@ article {
     pointer-events: none;
     align-items: center;
     justify-content: space-around;
+    z-index: 1;
 }
 
 
