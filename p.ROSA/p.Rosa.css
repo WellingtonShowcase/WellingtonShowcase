@@ -11,6 +11,9 @@
     --letra1 : rgb(211, 13, 89);
     --letra2 : rgba(0, 0, 0, 0.233);
     --letra3 : rgb(87, 7, 38);
+    --letra4 : white;
+    --sombra : rgba(0, 0, 0, 0.3);
+    --fundomenu : rgba(211, 13, 89, 0.486);
 
 }
 
@@ -25,56 +28,55 @@ body {
     scroll-snap-type: y mandatory;
     font: normal 600 1em "Oswald";
     transition: background-color 0.8s ease-in-out;
-    background-image: url('ROSA/ROSAvideo-00048.webp');
     overflow: hidden;
 }
 
 
 .WMENU {
-    background-color: var(--cor4);
+    background: linear-gradient(45deg, var(--letra1), var(--letra1), var(--letra1), var(--letra3));
 }
 
 
 .wmenu1 {
-    color: var(--letra1);
+    color: var(--letra4);
     text-shadow: 2px 2px 2px var(--letra2);
 }
 
 
 .wm1 {
-    color: var(--letra1);
+    color: var(--letra4);
     text-shadow: 1px 1px 2px var(--letra2);
 }
 
 
 .wm2 {
-    color: var(--letra1);
+    color: var(--letra4);
     text-shadow: 1px 1px 2px var(--letra2);
 }
 
 
 .wm1:hover {
-    background-color: var(--letra1);
-    color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px var(--lilacc2);
+    background-color: var(--letra4);
+    color: var(--letra1);
+    box-shadow: 5px 5px 5px var(--sombra);
 }
 
 
 .wm2:hover {
-    background-color: var(--letra1);
-    color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 5px var(--lilacc2);
+    background-color: var(--letra4);
+    color: var(--letra1);
+    box-shadow: 5px 5px 5px var(--sombra);
 }
 
 
 .homebotao {
-    color: var(--letra1);
+    color: var(--letra4);
 }
 
 
 .homebotao:hover {
-    background-color: var(--letra1);
-    color: rgb(255, 255, 255);
+    background-color: var(--letra4);
+    color: var(--letra1);
     box-shadow: 5px 5px 5px var(--letra2);
 }
 
@@ -82,20 +84,20 @@ body {
  /*MENU HAMBURGER*/
     svg {
         border-radius: 5px;
-        fill: var(--letra1);
+        fill: var(--letra4);
     }
 
 
 
     svg:hover {
-        background-color: var(--letra1);
-        fill: rgb(255, 255, 255);
+        background-color: var(--letra4);
+        fill: var(--letra1);
         box-shadow: 5px 5px 5px var(--letra2);
     }
 
 
     .wmenuside {
-        background-color: var(--lilacc1);
+        background: linear-gradient(45deg, var(--letra3), var(--letra1), var(--letra1), var(--letra3));
     }
 
 
@@ -105,27 +107,27 @@ body {
 
 
     .swm1 {
-        color: var(--letra1);
+        color: var(--letra4);
         }
 
 
     .swm2 {
-        color: var(--letra1);
+        color: var(--letra4);
         text-shadow: 1px 1px 2px var(--letra2);
         }
 
 
     .swm1:hover {
-        background-color: var(--letra1);
+        background-color: var(--letra4);
         border-radius: 10px;
-        color: rgb(255, 255, 255);
+        color: var(--letra1);
         box-shadow: 5px 5px 5px var(--letra2);
         }
 
 
     .swm2:hover {
-        background-color: var(--letra1);
-        color: rgb(255, 255, 255);
+        background-color: var(--letra4);
+        color: var(--letra1);
         box-shadow: 5px 5px 5px var(--letra2);
     }
 /*MENU HAMBURGER*/
@@ -134,27 +136,27 @@ body {
 /*LISTA DE PROJETOS*/
 #listaPROJETOSd a:hover,
 #listaPROJETOSm a:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--letra1);
 }
 #listaPROJETOSd:hover a,
 #listaPROJETOSm:hover a{
-    color: rgb(255, 255, 255);
+    color: var(--letra1);
 }
 #listaPROJETOSd a,
 #listaPROJETOSm a{
-    color: var(--letra1);
+    color: var(--letra4);
 }
 #listaPROJETOSd li:hover a,
 #listaPROJETOSm li:hover a{
-    color: var(--letra1);
+    color: var(--letra4);
 }
 /*LISTA DE PROJETOS*/
 
 
 main {
-    font-family: "Explora", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Old Standard TT", serif;
+    font-weight: 200;
+    font-style: italic;
 }
 
 
@@ -174,9 +176,9 @@ header {
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
     pointer-events: none;
-    color: var(--letra3);
-    font-size: 4vh;
-    width: 300px;
+    color: var(--letra1);
+    font-size: 2.5vh;
+    width: 400px;
     height: 100px;
 }
 
@@ -225,7 +227,6 @@ header {
     height: 10vh;
     top: 40%;
     left: 70%;
-    filter: drop-shadow(7px 7px 4px var(--letra2));
     transform: translate(-50%, -50%);
 }
 
@@ -261,12 +262,13 @@ header {
 #ROSAgaleria {
     position: fixed;
     background-color: rgb(255, 255, 255);
-    width: 15vw;
+    width: 100px;
+    height: 100px;
     top: 25%;
-    right: 25%;
+    right: 10%;
     pointer-events: none;
-    border-radius: 10px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     transition: scale 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
@@ -287,7 +289,6 @@ header {
     object-fit: cover;
     width: 100%;
 }
-
 
 
 .l {
@@ -317,21 +318,23 @@ header {
 
 
 article {
-    background-color: white;
+    background: linear-gradient(135deg, var(--letra1), white, white, white, white);
     position: fixed;
-    top: 5%;
-    left: 5%;
+    top: 50vh;
+    left: 47vw;
+    transform: translate(-50%, -50%);
     overflow: hidden;
     width: 80vw;
     height: auto;
     margin-right: calc(2% + 10px);
     margin-left: calc(2% + 10px);
-    pointer-events: none;
-    z-index: 1000;
+    pointer-events: auto;
+    z-index: 100000;
 }
 
 
 #galeria {
+    position: fixed;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
@@ -341,7 +344,7 @@ article {
     opacity: 1;
     pointer-events: all;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 100000;
 }
 
 
@@ -476,6 +479,7 @@ article {
     top: 75%;
     left: 10%;
     }
+
 
 
 

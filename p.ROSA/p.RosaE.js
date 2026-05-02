@@ -1,8 +1,8 @@
-const sens = 100;
+const sens = 5;
 let Iy = 0;
 
 function scroll(d) {
-    const scrollT = window.innerHeight;
+    const scrollT = window.innerHeight * 0.3;
     window.scrollBy({
         top: d === 'down' ? scrollT : -scrollT, behavior: 'smooth'
     });
