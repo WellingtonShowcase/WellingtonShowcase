@@ -39,7 +39,7 @@
 }
 
 @keyframes filter {
-    0%      { filter:brightness(130%)};
+    0%      { filter:brightness(150%)};
     50%     { filter:brightness(100%)};
     100%    { filter:brightness(150%)};
     
