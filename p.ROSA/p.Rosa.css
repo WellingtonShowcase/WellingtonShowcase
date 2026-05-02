@@ -26,16 +26,16 @@
     height: 100vh;
     width: 100vw;
     z-index: 9999;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;   
+    background: linear-gradient(135deg, rgb(87, 7, 38), rgb(87, 7, 38), rgb(211, 13, 89), rgb(211, 13, 89), rgb(211, 13, 89), rgb(211, 13, 89), rgb(87, 7, 38));
+    animation: filter 2.5s alternate infinite;
 }
 
 
 #frame {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(135deg, rgb(87, 7, 38), rgb(87, 7, 38), rgb(211, 13, 89), rgb(211, 13, 89), rgb(211, 13, 89), rgb(211, 13, 89), rgb(87, 7, 38));
-    animation: filter 2.5s alternate infinite;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes filter {
