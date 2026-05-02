@@ -178,8 +178,10 @@ header {
     pointer-events: none;
     color: var(--letra1);
     font-size: 2.5vh;
-    width: 400px;
+    width: 350px;
     height: 100px;
+    padding: 12px;
+    margin: 2px;
 }
 
 
