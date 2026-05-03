@@ -481,6 +481,7 @@ article {
 
 .f>img{
     width: 2em;
+    margin: 2%;
 }
 
 /*RODAPÉ*/
@@ -499,9 +500,14 @@ article {
 
 
 @media (max-width: 1000px){
-    .f>img{
+    .f>img {
     width: 2em;
-}
+    }
+
+
+    #rodape {
+    bottom: 12%;
+    }
 }
 
 
