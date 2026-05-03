@@ -46,12 +46,21 @@ body {
 
 .imagem {
     position: absolute;
-    animation: galeria 12.5s infinite;
     transition: filter 0.5s ease-in-out;
     width: 100%;
     height: 100%;
     z-index: 0;
     object-fit: cover;
+}
+
+
+.portifolio .imagem {
+    animation: galeria 7.5s infinite;
+}
+
+
+.projetos .imagem {
+    animation: galeria 12.5s infinite;
 }
 
 
@@ -68,10 +77,9 @@ body {
 
 
 @keyframes galeria {
-    0%                  {z-index: 1;}
-    33%                 {z-index: 1;}
-    34%                 {z-index: 0;}
-    100%                {z-index: 0;}
+    0%, 100%                    {z-index: 0;}
+    5%, 20%                     {z-index: 1;}
+    25%                         {z-index: 0;}
 }
 
 
