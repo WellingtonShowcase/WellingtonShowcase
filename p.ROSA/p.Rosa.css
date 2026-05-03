@@ -463,6 +463,13 @@ article {
     align-items: center;
     justify-content: space-around;
     z-index: 1;
+    font: normal 600 0.8em "Oswald"; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    color: var(--letra1);
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 
 

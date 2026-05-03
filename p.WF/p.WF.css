@@ -411,16 +411,22 @@ header {
     justify-content: space-around;
     right: 20%;
     bottom: 12%;
-    width: 12vw;
+    width: 20vw;
     height: 8vh;
     pointer-events: auto;
+    font: normal 600 0.4em "Oswald"; 
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 
 .f img {
-    height: 80%;
+    height: 50px;
     width: auto;
     filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+    margin: 5px;
 }
 
 
@@ -598,9 +604,21 @@ article {
 }*/
 
 
-@media (min-width: 900px){
-    body {overflow: hidden;
+@media (max-width: 1000px){
+    body {
+    overflow: hidden;
     }
+
+    #rodape {
+    flex-direction: row;
+    }
+
+    #rodape img{
+    height: 7vh;
+    }
+
+
+
 }
 
 
@@ -661,18 +679,12 @@ article {
     .f img {
         height: 5.9vh;
     }
-}
 
-
-
-
-
-@media (max-height: 520px){
-    .f img {
-        height: 10vh;
+    #rodape {
+        flex-direction: row;
     }
-}
 
+}
 
 
 
