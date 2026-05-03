@@ -9,6 +9,14 @@ function scroll(d) {
 }
 
 
+function scroll2(d) {
+    const scrollT = window.innerHeight * 0.45;
+    window.scrollBy({
+        top: d === 'down' ? scrollT : -scrollT, behavior: 'smooth'
+    });
+}
+
+
 window.addEventListener('wheel', (e) => {
     if (e.deltaY > 0) {
         scroll('down');
@@ -39,9 +47,9 @@ window.addEventListener('touchend', (e) => {
 
     if (Math.abs(dif) > sens) {
         if (dif > 0) {
-            scroll('down');
+            scroll2('down');
         } else {
-            scroll('up');
+            scroll2('up');
         }
     }
 }, { passive: true });
