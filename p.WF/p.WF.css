@@ -549,59 +549,9 @@ article {
 }
 
 
-/*
-@media (max-width: 1000px) and (orientation: landscape) {
-    #WF0 {
-        position: relative;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        pointer-events: none;
-    }
-
-    #wf0 {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-    }
 
 
-    #WFlogo0 {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 50%;
-    }
 
-
-    #WF1 {
-        position: relative;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        pointer-events: none;
-    }
-
-    #wf1 {
-        position: absolute;
-        top: 65%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
-    
-
-    #dignidade {
-        font-size: 20vh;
-    }
-
-
-}*/
 
 
 @media (max-width: 1000px){
@@ -627,41 +577,41 @@ article {
 
 
     #wf3 {
-        position: absolute;
-        width: 120%;
+    position: absolute;
+    width: 120%;
     }
 
 
     #dignidade {
-        position: absolute;
-        top: 35%;
-        left: 0;
-        transform: rotateZ(90deg);
-        font-size: 25vw;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    transform: rotateZ(90deg);
+    font-size: 25vw;
     }
 
 
     #integridade {
-        font-size: 12vw;
+    font-size: 12vw;
     }
     
 
     #cavalheirismo {
-        position: absolute;
-        top: 45%;
-        font-size: 7vh;
+    position: absolute;
+    top: 45%;
+    font-size: 7vh;
     }
 
 
     #force {
-        position: absolute;
-        bottom: 35%;
-        font-size: 5vh;
+    position: absolute;
+    bottom: 35%;
+    font-size: 5vh;
     }
 
 
     #performance {
-        font-size: 10vw;
+    font-size: 10vw;
     }
 
 
@@ -673,15 +623,17 @@ article {
 
     #WFgaleria {
     width: 25vw;
+    bottom: 120px;
     }
 
     
     .f img {
-        height: 5.9vh;
+    height: 5.9vh;
     }
 
     #rodape {
-        flex-direction: row;
+    flex-direction: row;
+    bottom: 150px;
     }
 
 }
