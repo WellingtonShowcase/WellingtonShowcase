@@ -433,12 +433,14 @@ footer#RODAPE {
 .loadinganimation {
     width: 15vw;
     object-fit: cover;
+    transform: translateY(-40%);
 }
 
 
 .loadinglogo {
     width: 100%;
     animation: logopulsando 2.44s infinite;
+
 }
 
 
