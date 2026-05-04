@@ -416,7 +416,7 @@ svg {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: var(--cortextocaixa1) solid 2px;
+    border: var(--cortextocaixa) solid 2px;
     transition: transform 0.3s ease-in-out;
 }
 
