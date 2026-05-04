@@ -55,7 +55,7 @@ atualizarCarrossel();
         texto.style.opacity = 1;
 
         focus.forEach(f => {
-            f.style.filter = "blur(5px) brightness(30%)";
+            f.style.filter = "blur(5px) brightness(20%)";
             f.style.transition = "filter 0.3s ease-in-out";
         });
 
