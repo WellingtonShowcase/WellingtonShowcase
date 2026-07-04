@@ -16,6 +16,9 @@
     --corhover : rgba(0, 0, 0, 0.322);
     --cortextohover : rgb(201, 201, 201);
     --stroke: black;
+    --caixa: rgb(97, 97, 97);
+    --caixa1: rgb(15, 15, 15);
+    --caixa2: rgb(148, 148, 148);
 }
 
 
@@ -51,7 +54,7 @@ body {
     align-items: center;
     margin-right: calc(5% + 10px);
     margin-left: calc(2% + 10px);
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     height: auto;
     background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
     border-radius: 5px;
@@ -207,7 +210,7 @@ button, .titulo, .texto {
     z-index: -1;
 }
 
-
+/*NAVIGATION*/
 #SOBRE {
     background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
     width: 60%;
@@ -273,65 +276,84 @@ i {
     color: var(--cortextocaixa1);
 }
 
+
+
 .WMENU {
-    background-color: var(--cor4);
+    background: linear-gradient(90deg, var(--caixa1), var(--caixa), var(--caixa), var(--caixa));
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
+#listaPROJETOSd,
+#listaSOBREd,
+#listaPORTFOLIOd {
+    background-color: var(--caixa);
+    color: var(--cortextocaixa1);
+}
 
-.wmenu1 {
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    color: var(--cortextocaixa1);
+}
+
+#listaPROJETOSd:hover,
+#listaSOBREd:hover,
+#listaPORTFOLIOd:hover {
+    background-color: var(--cortextocaixa1);
     color: var(--cortextocaixa);
-    text-shadow: 2px 2px 2px var(--corsombracaixa);
-}
-
-
-.wm1 {
-    color: var(--cortextocaixa);
-    text-shadow: 1px 1px 2px var(--corsombracaixa);
-}
-
-
-.wm2 {
-    color: var(--cortextocaixa);
-    text-shadow: 1px 1px 2px var(--corsombracaixa);
-}
-
-
-.wm1:hover {
-    background-color: var(--cortextocaixa);
-    color:var(--cortextohover);
     box-shadow: 5px 5px 5px var(--corsombracaixa);
+    background-color: var(--cortextocaixa1);
 }
-
-
-.wm2:hover {
-    background-color: var(--cortextocaixa);
-    color: var(--cortextohover);
-    box-shadow: 5px 5px 5px var(--corsombracaixa);
-}
-
 
 .homebotao {
-    color: var(--cortextocaixa);
+    color: var(--cortextocaixa1);
+    z-index: 2;
 }
 
-
-
 .homebotao:hover {
-    background-color: var(--cortextocaixa);
+    background-color: var(--cortextocaixa1);
     border-radius: 10px;
     color: var(--cortextohover);
     box-shadow: 5px 5px 5px var(--corsombracaixa);
 }
 
-
 .homebotao:hover h1{
-    color: var(--cortextohover);
+    color: var(--cortextocaixa);
 }
-
 
 .homebotao:hover h2{
-    color: var(--cortextohover);
+    color: var(--cortextocaixa);
 }
+
+.WELLINGTON,
+.showcase {
+    color: var(--cortextocaixa1);
+}
+
+/*LISTA DE PROJETOS*/
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: var(--cortextocaixa1);
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--cortextocaixa1);
+    background-color: var(--caixa);
+}
+#listaPROJETOSd.lst{
+    background-color: var(--caixa2);
+    color: var(--cortextocaixa1);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+#listaPROJETOSm.lst{
+    background-color: var(--caixa2);
+    color: var(--cortextocaixa1);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+/*LISTA DE PROJETOS*/
+
+
 
 
 /*MENU HAMBURGER*/
@@ -345,7 +367,7 @@ svg {
     display: none;
 }
 /*MENU HAMBURGER*/
-
+/*NAVIGATION*/
 
 .carrossel2 {
     position: relative;
@@ -493,20 +515,7 @@ article:hover {
 }
 
 
-/*LISTA DE PROJETOS*/
-#listaPROJETOSd a:hover,
-#listaPROJETOSm a:hover{
-    background-color: var(--cortextocaixa1);
-}
-#listaPROJETOSd:hover a,
-#listaPROJETOSm:hover a{
-    color: var(--cortextocaixa1);
-}
-#listaPROJETOSd li:hover a,
-#listaPROJETOSm li:hover a{
-    color: var(--cortextocaixa2);
-}
-/*LISTA DE PROJETOS*/
+
 
 
 /*RODAPÉ*/
@@ -564,17 +573,17 @@ article:last-child{
 
 /*MENU HAMBURGER*/
     svg {
-    fill: var(--cortextocaixa);
+    fill: var(--cortextocaixa1);
     }
 
     svg:hover {
-    background-color: var(--cortextocaixa);
-    fill: var(--cortextohover);
+    background-color: var(--cortextocaixa1);
+    fill: var(--cortextocaixa);
     box-shadow: 5px 5px 5px var(--corsombracaixa);
     }
 
     .wmenuside {
-    background-color: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(45deg, var(--caixa1), var(--caixa), var(--caixa), var(--caixa)) ;;
     }
 
     .wm1 {
@@ -590,25 +599,29 @@ article:last-child{
     }
 
     .swm1 {
-    color: var(--cortextocaixa);
+    color: var(--cortextocaixa1);
     text-shadow: 1px 1px 2px var(--corsombracaixa);
     }
 
     .swm2 {
-    color: var(--cortextocaixa);
+    color: var(--cortextocaixa1);
     text-shadow: 1px 1px 2px var(--corsombracaixa);
     }
 
     .swm1:hover {
-    background-color: var(--cortextocaixa);
-    color: var(--cortextohover);
+    background-color: var(--cortextocaixa1);
+    color: var(--cortextocaixa);
     box-shadow: 5px 5px 5px var(--corsombracaixa);
     }
 
     .swm2:hover {
-    background-color: var(--cortextocaixa);
-    color: var(--cortextohover);
+    background-color: var(--cortextocaixa1);
+    color: var(--cortextocaixa);
     box-shadow: 5px 5px 5px var(--corsombracaixa);
+    }
+
+    #listaPROJETOSm a{
+        color: var(--cortextocaixa1);
     }
 /*MENU HAMBURGER*/
 

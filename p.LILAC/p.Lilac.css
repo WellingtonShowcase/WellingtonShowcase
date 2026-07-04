@@ -123,50 +123,51 @@ body {
 
 
 .WMENU {
-    background-color: var(--cor4);
+    background-color: var(--lilacc1);
 }
 
 
 .wmenu1 {
-    color: var(--lilacc1);
+
     text-shadow: 2px 2px 2px var(--lilacc2);
 }
 
 
 .wm1 {
-    color: var(--lilacc1);
+    color: var(--corfundo);
     text-shadow: 1px 1px 2px var(--lilacc2);
 }
 
 
 .wm2 {
-    color: var(--lilacc1);
+    color: var(--corfundo);
     text-shadow: 1px 1px 2px var(--lilacc2);
 }
 
 
 .wm1:hover {
-    background-color: var(--lilacc1);
-    color: white;
+    background-color: var(--corfundo);
+    color: var(--lilacc1);
     box-shadow: 5px 5px 5px var(--lilacc2);
 }
 
 
 .wm2:hover {
-    background-color: var(--lilacc1);
-    color: white;
+    background-color: var(--corfundo);
+    color: var(--lilacc1);
     box-shadow: 5px 5px 5px var(--lilacc2);
 }
 
 
 .homebotao {
-    color: var(--lilacc1);
+    color: var(--corfundo);
+    z-index: 2;
 }
 
 
 .homebotao:hover {
-    background-color: var(--lilacc1);
-    color: white;
+    background-color: var(--corfundo);
+    color: var(--lilacc1);
     box-shadow: 5px 5px 5px var(--lilacc2);
 }
 
@@ -204,6 +205,7 @@ footer#RODAPE {
 
 
 .icon {
+    display: flex;
     position: absolute;
     top: 60%;
     left: 80%;
@@ -211,6 +213,20 @@ footer#RODAPE {
     width: 200px;
     height: 220px;
     z-index: 1;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#clk {
+    position: absolute;
+    color: var(--corfundo);
+    text-align: center;
+    width: 50px;
+    z-index: 2;
+    padding-right: 20px;
+    pointer-events: none;
 }
 
 
@@ -458,21 +474,32 @@ footer#RODAPE {
 
 
 /*LISTA DE PROJETOS*/
+
 #listaPROJETOSd a:hover,
 #listaPROJETOSm a:hover{
-    background-color: var(--lilacc3);
+    background-color: var(--lilacc1);
 }
-#listaPROJETOSd:hover a,
-#listaPROJETOSm:hover a{
-    color: var(--lilacc3);
-}
+
 #listaPROJETOSd a,
 #listaPROJETOSm a{
     color: var(--lilacc1);
 }
 #listaPROJETOSd li:hover a,
 #listaPROJETOSm li:hover a{
+    color: var(--corfundo);
+}
+
+#listaPROJETOSd.lst{
+    background-color: var(--corfundo);
     color: var(--lilacc1);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+#listaPROJETOSm.lst{
+    background-color: var(--corfundo);
+    color: var(--lilacc1);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
 }
 /*LISTA DE PROJETOS*/
 
@@ -554,23 +581,21 @@ footer#RODAPE {
 
 
     .icon {
+        display: flex;
         position: absolute;
         visibility: visible;
         left: 50%;
-        width: 75vw;
-        height: 75vh;
+        width: 175px;
+        height: 175px;
         z-index: 1;
         overflow: visible;
     }
 
 
     .lilacicon {
-        position: absolute;
         width: 15vw;
         z-index: 1;
         transition: transform 1s ease-in-out;
-        left: 25%;
-        top: 0%;
         filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.8));
     }
 
@@ -593,11 +618,11 @@ footer#RODAPE {
 }
 #listaPROJETOSd a,
 #listaPROJETOSm a{
-    color: var(--lilacc3);
+    color: var(--lilacc1);
 }
 #listaPROJETOSd li:hover a,
 #listaPROJETOSm li:hover a{
-    color: var(--lilacc3);
+    color: var(--corfundo);
 }
 /*LISTA DE PROJETOS*/
 }

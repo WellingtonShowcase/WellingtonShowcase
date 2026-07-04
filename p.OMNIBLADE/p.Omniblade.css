@@ -8,6 +8,7 @@
 
 :root {
     --led : rgba(119, 255, 71);
+    --sombra : rgba(0, 0, 0, 0.233);
 }
 
 
@@ -26,65 +27,49 @@ body {
 
 .wmenu1 {
     color: var(--led);
-    text-shadow: 2px 2px 2px var(--lilacc2);
+    text-shadow: 2px 2px 2px var(--sombra);
 }
 
 
 .wm1 {
     color: var(--led);
-    text-shadow: 1px 1px 2px var(--lilacc2);
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 
 
 .wm2 {
     color: var(--led);
-    text-shadow: 1px 1px 2px var(--lilacc2);
+    text-shadow: 1px 1px 2px var(--sombra);
 }
 
 
 .wm1:hover {
     background-color: var(--led);
     color: black;
-    box-shadow: 5px 5px 5px var(--lilacc2);
+    box-shadow: 5px 5px 5px var(--sombra);
 }
 
 
 .wm2:hover {
     background-color: var(--led);
     color: black;
-    box-shadow: 5px 5px 5px var(--lilacc2);
+    box-shadow: 5px 5px 5px var(--sombra);
 }
 
 
 .homebotao {
-    color: var(--lilacc1);
+    color: var(--led);
+    z-index: 2;
 }
 
 .homebotao:hover {
     background-color: var(--led);
     color: black;
-    box-shadow: 5px 5px 5px var(--lilacc2);
+    box-shadow: 5px 5px 5px var(--sombra);
 }
 
 
-/*LISTA DE PROJETOS*/
-#listaPROJETOSd a:hover,
-#listaPROJETOSm a:hover{
-    background-color: black;
-}
-#listaPROJETOSd:hover a,
-#listaPROJETOSm:hover a{
-    color: black;
-}
-#listaPROJETOSd a,
-#listaPROJETOSm a{
-    color: var(--led);
-}
-#listaPROJETOSd li:hover a,
-#listaPROJETOSm li:hover a{
-    color: var(--led);
-}
-/*LISTA DE PROJETOS*/
+
 
 
 /*MENU HAMBURGER*/
@@ -266,8 +251,8 @@ p {
 
 
 .txtprinch1 {
-    font-family: "Barlow Semi Condensed", sans-serif;
-    font-weight: 600;
+    font-family: "Rationale", sans-serif;
+    font-weight: 900;
     font-size: 1.8em;
 }
 
@@ -275,7 +260,6 @@ p {
 strong {
     font-weight: 600;
     font-size: 1.8em;
-    font-style: oblique;
 }
 
 
@@ -377,6 +361,35 @@ strong {
 }
 
 
+/*LISTA DE PROJETOS*/
+
+#listaPROJETOSd a:hover,
+#listaPROJETOSm a:hover{
+    background-color: black;
+}
+
+#listaPROJETOSd a,
+#listaPROJETOSm a{
+    color: black;
+}
+#listaPROJETOSd li:hover a,
+#listaPROJETOSm li:hover a{
+    color: var(--led);
+}
+
+#listaPROJETOSd.lst{
+    background-color: var(--led);
+    color: black;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+#listaPROJETOSm.lst{
+    background-color: var(--led);
+    color: black;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+/*LISTA DE PROJETOS*/
 
 
 /*RODAPÉ*/
@@ -668,24 +681,6 @@ article {
         box-shadow: 5px 5px 5px var(--lilacc2);
     }
 
-/*LISTA DE PROJETOS*/
-#listaPROJETOSd a:hover,
-#listaPROJETOSm a:hover{
-    background-color: black;
-}
-#listaPROJETOSd:hover a,
-#listaPROJETOSm:hover a{
-    color: black;
-}
-#listaPROJETOSd a,
-#listaPROJETOSm a{
-    color: var(--led);
-}
-#listaPROJETOSd li:hover a,
-#listaPROJETOSm li:hover a{
-    color: var(--led);
-}
-/*LISTA DE PROJETOS*/
 /*MENU HAMBURGER*/
 }
 /*MEDIA QUERIES*/

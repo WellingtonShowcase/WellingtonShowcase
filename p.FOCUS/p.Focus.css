@@ -7,11 +7,12 @@
 
 
 :root {
-    --cor1 : rgba(0, 0, 0, 0.58);
+    --cor1: rgba(0, 0, 0, 0.58);
     --cor2: rgb(143, 143, 143);
     --cor3: rgb(27, 27, 27);
     --cor4: rgba(255, 255, 255, 0.2);
-    --cor5 : rgba(0, 0, 0, 0.548);
+    --cor5: rgba(0, 0, 0, 0.548);
+    --cor6: rgba(255, 255, 255, 0.705); 
     --corletras1: rgb(214, 214, 214);
     --corletras2: rgb(51, 51, 51);
 
@@ -70,6 +71,7 @@ body {
 
 .titulo {
     font-size: 1em;
+    font: normal 600 1em "Anta";
 }
 
 .destaque {
@@ -189,7 +191,7 @@ body {
 
 
 .WMENU {
-    background-color: var(--cor4);
+    background: linear-gradient(30deg, var(--corletras1), var(--corletras2));
 }
 
 
@@ -225,21 +227,32 @@ body {
 
 
 /*LISTA DE PROJETOS*/
+
 #listaPROJETOSd a:hover,
 #listaPROJETOSm a:hover{
-    background-color: var(--corletras1);
+    background-color: var(--cor3);
 }
-#listaPROJETOSd:hover a,
-#listaPROJETOSm:hover a{
-    color: var(--corletras1);
-}
+
 #listaPROJETOSd a,
 #listaPROJETOSm a{
-    color: var(--cor1);
+    color: var(--cor3);
 }
 #listaPROJETOSd li:hover a,
 #listaPROJETOSm li:hover a{
+    color: var(--corletras1);
+}
+
+#listaPROJETOSd.lst{
+    background: linear-gradient(30deg, var(--corletras1), var(--corletras1));
     color: var(--cor1);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+#listaPROJETOSm.lst{
+    background: linear-gradient(30deg, var(--corletras1), var(--corletras1));
+    color: var(--cor1);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
 }
 /*LISTA DE PROJETOS*/
 
@@ -263,6 +276,7 @@ body {
     padding: 10px 10px 5px 10px;
     text-decoration: none;
     color: var(--corletras2);
+    z-index: 2;
 }
 
 .homebotao:hover {
@@ -490,7 +504,7 @@ footer#RODAPE {
 
 
     .wmenuside {
-    background: linear-gradient(90deg, var(--cor3), var(--cor2));
+    background: linear-gradient(30deg, var(--corletras1), var(--corletras2));
     }
 
 
@@ -534,25 +548,6 @@ footer#RODAPE {
     box-shadow: 5px 5px 5px var(--cor5);
     }
     /*MENU HAMBURGER*/
-
-    /*LISTA DE PROJETOS*/
-    #listaPROJETOSd a:hover,
-    #listaPROJETOSm a:hover{
-        background-color: white;
-    }
-    #listaPROJETOSd:hover a,
-    #listaPROJETOSm:hover a{
-        color: white;
-    }
-    #listaPROJETOSd a,
-    #listaPROJETOSm a{
-        color: var(--cor1);
-    }
-    #listaPROJETOSd li:hover a,
-    #listaPROJETOSm li:hover a{
-        color: var(--cor1);
-    }
-    /*LISTA DE PROJETOS*/
 
 
 }

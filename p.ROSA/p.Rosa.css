@@ -116,6 +116,7 @@ body {
 
 .homebotao {
     color: var(--letra4);
+    z-index: 2;
 }
 
 
@@ -178,28 +179,39 @@ body {
 /*MENU HAMBURGER*/
 
 
+
 /*LISTA DE PROJETOS*/
+
 #listaPROJETOSd a:hover,
 #listaPROJETOSm a:hover{
-    background-color: var(--letra1);
+    background-color: var(--letra4);
 }
-#listaPROJETOSd:hover a,
-#listaPROJETOSm:hover a{
-    color: var(--letra1);
-}
+
 #listaPROJETOSd a,
 #listaPROJETOSm a{
     color: var(--letra4);
 }
 #listaPROJETOSd li:hover a,
 #listaPROJETOSm li:hover a{
+    color: var(--letra1);
+}
+
+#listaPROJETOSd.lst{
+    background-color: var(--letra1);
     color: var(--letra4);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
+}
+#listaPROJETOSm.lst{
+    background-color: var(--letra1);
+    color: var(--letra4);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.185), inset -2px -2px 2px rgba(0, 0, 0, 0.185);
 }
 /*LISTA DE PROJETOS*/
 
-
 main {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Tangerine", sans-serif;
     font-weight: 100;
     font-style: italic;
     text-shadow: 2px 2px 4px var(--sombra);
@@ -223,7 +235,7 @@ header {
     transition: opacity 0.7s ease-in-out;
     pointer-events: none;
     color: var(--letra1);
-    font-size: 2.5vh;
+    font-size: 5vh;
     width: 350px;
     height: 100px;
     padding: 12px;
@@ -311,8 +323,8 @@ header {
 #ROSAgaleria {
     position: fixed;
     background-color: rgb(255, 255, 255);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     top: 25%;
     right: 10%;
     pointer-events: none;
@@ -337,6 +349,19 @@ header {
 #ROSAgaleria img{
     object-fit: cover;
     width: 100%;
+}
+
+
+#clk {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7em;
+    position: absolute;
+    width: 100px;
+    top: 75%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -498,6 +523,12 @@ article {
     #ROSAlogo{
     height: 7vh;
     }
+
+    #rosa1,
+    #rosa2,
+    #rosa3 {
+    width: 300px;
+    }
 }
 
 
@@ -528,19 +559,19 @@ article {
 
 
     #rosa1 {
-    top: 25%;
+    top: 20%;
     left: 10%;
     }
 
 
     #rosa2 {
-    top: 50%;
+    top: 35%;
     left: 10%;
     }
 
 
     #rosa3 {
-    top: 75%;
+    top: 50%;
     left: 10%;
     }
 

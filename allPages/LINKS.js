@@ -29,6 +29,12 @@ async function LINKS() {
 
 
 function listaLINKS() {
+    const menuD = document.getElementById("listaPROJETOSd")
+    const menuM = document.getElementById("listaPROJETOSm")
+
+    if (menuD) menuD.classList.toggle("lst");
+    if (menuM) menuM.classList.toggle("lst");
+
     const listapd = document.querySelectorAll("#listaPROJETOSd li");
     const listapm = document.querySelectorAll("#listaPROJETOSm li");
 
@@ -36,6 +42,7 @@ function listaLINKS() {
         if (index === -1) return;
 
         li.style.display = (li.style.display === "flex") ? "none" : "flex";
+        li.style.boxShadow = "4px 4px 4px rgba(0, 0, 0, 0.5)";
 
     });
 
@@ -43,6 +50,8 @@ function listaLINKS() {
         if (index === -1) return;
 
         li.style.display = (li.style.display === "flex") ? "none" : "flex";
+        li.style.boxShadow = "4px 4px 4px rgba(0, 0, 0, 0.5)";
+
     });
 
 };
