@@ -25,6 +25,8 @@ body {
     font: normal 600 1em "Oswald";
     overflow-x: hidden;
     color: var(--corletras1);
+    width: 100dvw;
+    height: 100dvh;
 }
 
 
@@ -37,8 +39,8 @@ body {
 
 .videofocus {
     position: relative;
-    width: 100vw;
-    transform: translateY(6px);
+    width: 100dvw;
+    transform: translateY(12px);
     pointer-events: none;
 }
 
