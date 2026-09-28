@@ -50,6 +50,7 @@ body {
     height: 100%;
     z-index: 0;
     object-fit: cover;
+    left: 0;
 }
 
 
@@ -59,7 +60,7 @@ body {
 
 
 .projetos .imagem {
-    animation: galeria 12.5s infinite;
+    animation: galeria 15s infinite;
 }
 
 
@@ -68,7 +69,7 @@ body {
 .projetos a:nth-child(3) .imagem   {animation-delay: 5s;}
 .projetos a:nth-child(4) .imagem   {animation-delay: 7.5s;}
 .projetos a:nth-child(5) .imagem   {animation-delay: 10s;}
-
+.projetos a:nth-child(6) .imagem   {animation-delay: 12.5s;}
 
 .portifolio a:first-child .imagem    {z-index: 1;}
 .portifolio a:nth-child(2) .imagem   {animation-delay: 2.5s;}
