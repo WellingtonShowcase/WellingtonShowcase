@@ -1,5 +1,4 @@
 const loadingframe = document.getElementById("loadingframe");
-const m3d = document.querySelector("#m3D model-viewer");
 const carregado = new Promise((resolve) => {
     if (document.readyState === "complete") {
         resolve();
@@ -9,17 +8,30 @@ const carregado = new Promise((resolve) => {
 });
 
 
-const carregado3d = new Promise((resolve) => {
-    if (!m3d) {
-        resolve();
-        return;
+const carregado3d = new Promise(async (resolve) => {
+    try {
+        if ("customElements" in window) {
+            await customElements.whenDefined("model-viewer");
     }
+
+const m3d = document.querySelector("#m3D model-viewer");
+
+if(!m3d){
+    resolve();
+    return;
+}
 
     if (m3d.loaded) {
         resolve();
+
     } else {
-        m3d.addEventListener("load", resolve, { once: true});
+        m3d.addEventListener("load", resolve, { once: true });
+
+        m3d.addEventListener("error", resolve, { once: true });
     }
+} catch (error) {
+    resolve();
+}
 });
 
 
@@ -29,6 +41,8 @@ Promise.all([carregado, carregado3d]).then(() => {
     document.body.classList.add("carregado");
 
     setTimeout(() => {
-        carregar.remove();
+        if (loadingframe) {
+        loadingframe.remove();
+        }
     }, 500);
 });
