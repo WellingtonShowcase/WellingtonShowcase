@@ -42,6 +42,13 @@ body {
 }
 
 
+#BUBBLESchamada,
+#BUBBLESchamadaB,
+#BUBBLESchamadaC {
+    pointer-events: none;
+}
+
+
 #m3D {
     display: flex;
     width: 100dvw;
@@ -51,6 +58,7 @@ body {
     background-size: 5%;
     overflow-x: hidden;
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.438));
+    pointer-events: none;
 }
 
 
@@ -194,6 +202,7 @@ body.carregado #limao {
     border-radius: 10px 0px 0px 10px;
     top: 50%;
     right: 0;
+    pointer-events: none;
     transform: translateY(-50%);
     box-shadow: -25px 0px 5px var(--cor5);
     flex-direction: column;
@@ -695,6 +704,8 @@ body.carregado #limao {
     align-items: center;
     z-index: 9999;
     overflow: hidden;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
 
