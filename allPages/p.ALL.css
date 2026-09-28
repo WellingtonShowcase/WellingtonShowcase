@@ -7,20 +7,43 @@
     list-style: none;
 }
 
-
-:root {
-    --cortextocaixa : rgb(97, 97, 97);
-    --cortextocaixa1 : rgb(235, 235, 235);
-    --cortextocaixa2 : rgb(48, 48, 48);
-    --corsombracaixa : rgba(0, 0, 0, 0.322);
-    --corhover : rgba(0, 0, 0, 0.322);
-    --cortextohover : rgb(201, 201, 201);
-    --stroke: black;
-    --caixa: rgb(97, 97, 97);
-    --caixa1: rgb(15, 15, 15);
-    --caixa2: rgb(148, 148, 148);
+html, body {
+    scroll-behavior: smooth;
+    height: 100dvh;
+    width: 100dvw;
 }
 
+main.tela {
+    timeline-scope: --scrollsobre, --scrollsobre2;
+}
+
+:root {
+    --cortextocaixa:     rgb(97, 97, 97);
+    --cortextocaixa1:    rgb(235, 235, 235);
+    --cortextocaixa2:    rgb(48, 48, 48);
+    --corsombracaixa:    rgba(0, 0, 0, 0.322);
+    --corhover:          rgba(0, 0, 0, 0.322);
+    --cortextohover:     rgb(201, 201, 201);
+    --stroke:            black;
+    --caixa:             rgb(97, 97, 97);
+    --caixa1:            rgb(15, 15, 15);
+    --caixa2:            rgb(148, 148, 148);
+    --rolagem1:          rgba(255, 255, 255, 0.151);
+    --rolagem2:          rgba(255, 255, 255, 0.726);
+}
+
+
+::-webkit-scrollbar {
+    width: 1.5em;
+    background: linear-gradient(45deg, var(--caixa1), var(--caixa), var(--caixa), var(--caixa));
+}
+::-webkit-scrollbar-track {
+    background-color: var(--rolagem1);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--rolagem1);
+    border-radius: 100vw;
+}
 
 body {
     position: relative;
@@ -28,7 +51,6 @@ body {
     width: 100vw;
     color: var(--cortextocaixa1);
     overflow-x: hidden;
-    text-shadow: 5px 5px 5px var(--corsombracaixa);
 }
 
 
@@ -215,6 +237,8 @@ button, .titulo, .texto {
     background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
     width: 60%;
     padding: 2%;
+    padding-left: 5%;
+    transform: translateX(calc(-5% - 10px));
     pointer-events: none;
     box-shadow: 3px 3px 5px var(--corsombracaixa);
 }
@@ -224,12 +248,6 @@ button, .titulo, .texto {
     color: var(--cortextocaixa1);
     margin-bottom: 1em;
     font-weight: 400;
-}
-
-
-#SOBRE,
-#SOBRE2 {
-    border-radius: 10px;
 }
 
 
@@ -251,9 +269,11 @@ button, .titulo, .texto {
 #SOBRE2 {
     background: linear-gradient(var(--cortextocaixa2), var(--cortextocaixa));
     width: 60%;
+    margin-top: 5%;
     padding: 2%;
+    padding-right: 5%;
     pointer-events: none;
-    transform: translateX(50%);
+    transform: translateX(62%);
     box-shadow: 3px 3px 5px var(--corsombracaixa);
 }
 
@@ -554,6 +574,92 @@ article:last-child{
 
 /*RODAPÉ*/
 
+#SOBRE {
+    view-timeline-name: --scrollsobre;
+    animation: sumir linear both;
+    animation-timeline: view();
+    animation-range: exit-crossing 0% exit-crossing 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#SOBRE2 {
+    opacity: 0;
+    view-timeline-name: --scrollsobre2;
+    animation: aparecer2 linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.sb {
+    width: 250px;
+    height: 100px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.sbL{
+    color: var(--cortextocaixa1);
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.sbT{
+    color: var(--cortextocaixa1);
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 0.3em ;
+}
+
+#SB1 {
+    font-size: 0.1em;
+    color: var(--cortextocaixa);
+    opacity: 0;
+    position: fixed;
+    top: 20%;
+    animation: aparecer linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 200%;
+    width: auto;
+    height: auto;
+}
+
+#SB2 {
+    font-size: 1em;
+    color: var(--cortextocaixa);
+    position: fixed;
+    opacity: 1;
+    bottom: 10%;
+    right: 15%;
+    transform: translateX(100px);
+    animation: sumir2 linear both;
+    animation-timeline: --scrollsobre2;
+    animation-range: entry 0% entry 100%;
+    width: auto;
+    height: auto;
+}
+
+@keyframes sumir {
+    to {
+        opacity: 0;
+    }
+}
+@keyframes sumir2 {
+    0%  {opacity: 1;
+    font-size: 1em;}
+    100% {opacity: 0;
+    font-size: 0.1em;}
+    }
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        font-size: 1em;
+    }
+}
+@keyframes aparecer2 {
+    0%  {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 
 @media (max-width: 500px){
@@ -569,6 +675,11 @@ article:last-child{
     background-size: cover;
     width: 100%;
     height: 100%;
+    }
+
+    #SOBRE,
+    #SOBRE2 {
+    border-radius: 10px;
     }
 
 /*MENU HAMBURGER*/
@@ -600,12 +711,10 @@ article:last-child{
 
     .swm1 {
     color: var(--cortextocaixa1);
-    text-shadow: 1px 1px 2px var(--corsombracaixa);
     }
 
     .swm2 {
     color: var(--cortextocaixa1);
-    text-shadow: 1px 1px 2px var(--corsombracaixa);
     }
 
     .swm1:hover {
@@ -648,6 +757,10 @@ article:last-child{
     .texto {
     font-size: 0.9em;
     font-weight: 100;
+}
+
+    #SB1, #SB2 {
+    display: none;
 }
 }
 

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="115.13366mm"
+   height="63.532913mm"
+   viewBox="0 0 115.13366 63.532913"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="Bubblesload.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.65724336"
+     inkscape:cx="178.01625"
+     inkscape:cy="-32.712388"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g141" />
+  <defs
+     id="defs1" />
+  <g
+     id="g74"
+     transform="matrix(0,-0.24557338,0.24544721,0,-324.34047,366.66404)"
+     style="stroke-width:1.07769">
+    <g
+       id="g141"
+       transform="translate(-16.221069,78.914735)">
+      <g
+         id="g136"
+         style="stroke-width:10.4476;stroke-dasharray:none"
+         transform="translate(-16.233519,-180.42439)">
+        <path
+           id="path135"
+           style="fill:none;fill-rule:evenodd;stroke:#ede400;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+           transform="rotate(90)"
+           d="m 1592.3005,-1397.4895 a 65.187134,65.153648 0 0 1 66.2646,-63.8469 65.187134,65.153648 0 0 1 64.0908,66.0265 65.187134,65.153648 0 0 1 -65.8558,64.2682 65.187134,65.153648 0 0 1 -64.5108,-65.6167" />
+        <path
+           id="path136"
+           style="fill:none;fill-rule:evenodd;stroke:#ede400;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke"
+           transform="matrix(0.52093334,0.85359736,-0.85335913,0.5213235,0,0)"
+           d="m 2105.2317,-300.56301 a 30.456741,30.449593 0 0 1 -5.88,-38.866" />
+      </g>
+    </g>
+  </g>
+</svg>

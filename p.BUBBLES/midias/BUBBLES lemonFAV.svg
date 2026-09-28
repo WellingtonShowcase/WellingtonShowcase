@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="2000"
+   height="2000"
+   viewBox="0 0 2000 2000"
+   sodipodi:docname="BUBBLES lemonFAV.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.19410081"
+     inkscape:cx="819.16196"
+     inkscape:cy="1223.591"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <g
+       id="g8"
+       transform="translate(-134.71949,7.2859745)">
+      <path
+         d="m 1144.2907,155.6946 c -485.68624,-3.93011 -890.6122,338.6851 -923.68617,781.54786 -6.59471,111.36334 228.52754,132.78594 244.01831,0 32.06761,-319.84388 326.72779,-563.89656 677.93516,-561.50053 370.847,3.77222 669.0634,280.18226 668.1993,619.33897 -2.1217,318.7827 -269.0733,583.7703 -616.321,611.7862 -160.6622,-4.0735 -184.4498,208.4147 0,222.284 480.6679,-28.9465 855.0338,-392.6228 857.341,-832.8603 1.1752,-460.3206 -403.8363,-835.47874 -907.4866,-840.5962 z"
+         style="fill:none;fill-rule:evenodd;stroke:#aaed00;stroke-width:100;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;paint-order:fill markers stroke;stroke-dasharray:none"
+         id="path4"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+  </g>
+</svg>

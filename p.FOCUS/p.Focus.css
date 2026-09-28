@@ -19,6 +19,19 @@
 }
 
 
+::-webkit-scrollbar {
+    width: 1.5em;
+    background-color: var(--cor3);
+}
+::-webkit-scrollbar-track {
+    background-color: var(--cor4);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor1);
+    border-radius: 100vw;
+}
+
+
 body {
     background-image: linear-gradient(90deg, var(--cor3), var(--cor2));
     position: relative;
@@ -199,19 +212,16 @@ body {
 
 .wmenu1 {
     color: var(--corletras2);
-    text-shadow: 2px 2px 2px var(--cor5);
 }
 
 
 .wm1 {
     color: var(--corletras2);
-    text-shadow: 1px 1px 2px var(--cor5);
 }
 
 
 .wm2 {
     color: var(--corletras2);
-    text-shadow: 1px 1px 2px var(--cor5);
 }
 
 
@@ -311,6 +321,11 @@ body {
 footer#RODAPE {             
     color: var(--cortextocaixa1);
     font-size: 1em;
+}
+
+
+#RODAPE>#homebotao{
+    color: var(--corletras1);
 }
 
 
@@ -527,13 +542,11 @@ footer#RODAPE {
 
     .swm1 {
     color: var(--corletras1);
-    text-shadow: 1px 1px 2px var(--cor5);
     }
 
 
     .swm2 {
     color: var(--corletras1);
-    text-shadow: 1px 1px 2px var(--cor5);
     }
 
 

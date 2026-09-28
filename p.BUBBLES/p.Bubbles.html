@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p.Bubbles.css">
+    <link rel="stylesheet" href="../allPages/NAV.css">
+    <link rel="stylesheet" href="../allPages/fontes.css">
+    <link rel="shortcut icon" href="midias/BUBBLES lemonFAV.svg" type="image/x-icon">
+
+    <title>BUBBLES LEMON</title>
+</head>
+<body>
+
+<nav id="NAV"> </nav>
+
+<!-- TELA DE LOADING-->
+<div class="load" id="loadingframe">
+<div id="center">
+    <img id="bubbleA" src="midias/Bubblesload.svg" alt="">
+    <img id="bubbleB" src="midias/Bubblesload.svg" alt="">
+    <img id="bubbleC" src="midias/Bubblesload.svg" alt="">
+    <img id="bubbleD" src="midias/BUBBLES lemon.svg" alt="">
+</div>
+</div>
+<!-- TELA DE LOADING-->
+
+    <div id="m3D">
+        <model-viewer src="midias/model/BubblesLemonMODEL.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" camera-target="55m 0m 0m" camera-orbit="145deg 60deg 200m" field-of-view="30deg" tone-mapping="neutral" shadow-intensity="1" environment-image="midias/model/studio_small_08_4k.hdr">
+          <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+          </div>
+          <button slot="ar-button" id="ar-button">
+          </button>
+
+        </model-viewer>
+        <script src="midias/model/script.js"></script>
+        <!-- Loads <model-viewer> for browsers: -->
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+    </div>
+
+<header id="BUBBLESchamada"><img id="BUBBLESlogo" src="midias/BUBBLES lemon.svg" alt=""><h1 id="autentico">AUTÊNTICO,</h1> <h1 id="refrescante">REFRESCANTE</h1> <h1 id="limao">E LIMÃO</h1></header>
+
+<header id="BUBBLESchamadaB"> 
+    <div id="vetores">
+        <div class="bubblesvetores" id="bubblesvetores1"><img src="midias/chamadaBubbles1.svg" alt=""></div>
+        <div class="bubblesvetores" id="bubblesvetores2"><img src="midias/chamadaBubbles2.svg" alt=""></div>
+        <div class="bubblesvetores" id="bubblesvetores3"><img src="midias/chamadaBubbles3.svg" alt=""></div>
+    </div> 
+    <div id="chamadaB">
+    <h1 id="garrafa">BUBBLES LEMON 500ml</h1> <h2 id="descricao">Experimente também a melhor opção para uma rotina cheia</h2>
+    </div> 
+</header>
+
+<header id="BUBBLESchamadaC"> 
+    <div id="TABELA">
+        <div id="tabela">
+        <h1 id="cabecalho"> INFORMAÇÕES NUTRICIONAIS </h1>
+        <h2 class="nutriA" id="nutri1"></h2>                                <p class="infoB" id="info1">200ml</p>   <p class="infoC" id="info_1">%VD</p>
+        <h2 class="nutriA" id="nutri2">Carboidratos</h2>                    <p class="infoB" id="info2">0</p>       <p class="infoC" id="info_2">0</p>
+        <h2 class="nutriA" id="nutri3">Açucares totais (g)</h2>             <p class="infoB" id="info3">0</p>       <p class="infoC" id="info_3">0</p>
+        <h2 class="nutriA" id="nutri4">Açucares adicionados (g)</h2>        <p class="infoB" id="info4">0</p>       <p class="infoC" id="info_4">0</p>
+        <h2 class="nutriA" id="nutri5">Sódio (mg)</h2>                      <p class="infoB" id="info5">110</p>     <p class="infoC" id="info_5">6</p>
+        <h2 class="nutriA" id="nutri6">Vitamina B3 (mg)</h2>                <p class="infoB" id="info6">2,4</p>     <p class="infoC" id="info_6">16</p>
+        <h2 class="nutriA" id="nutri7">Vitaminas B4 (mg)</h2>               <p class="infoB" id="info7">0,75</p>    <p class="infoC" id="info_7">15</p>
+        <h2 class="nutriA" id="nutri8">Vitaminas B6 (mg)</h2>               <p class="infoB" id="info8">0,2</p>     <p class="infoC" id="info_8">15</p>
+        <p id="infoadd">Não contém quantidades significativas de valor energético, proteínas, gorduras totais, gorduras saturadas, gorduras trans e fibras alimentares</p>
+    </div>
+    <div id="ingredientes"><h1 id="INGREDIENTES">INGREDIENTES</h1><p>Água gaseificada, suco natural de limão, aromatizantes de limão, niacinamida, D-pantotenatode cálcio, maltodextrina e cloridrato de piridoxina, ácido cítrico. 
+NÃO CONTÉM CORANTES. 
+NÃO CONTÉM GLÚTEM.</p></div>
+    </div>
+</header>
+
+<footer id="RODAPE">             
+            <a id="homebotao" href="../p.INDEX/p.Index.html">
+            <h1 class="WELLINGTON">WELLINGTON</h1> 
+            <h2 class="showcase">showcase</h2> 
+            </a>
+    
+    <a class="f" id="linkedin" href="https://www.linkedin.com/in/wellington-vasconcelos-a6a390356" target="_blank"><img src="midias/linkedin-round-svgrepo-com (7).svg" alt=""></a>
+    
+	<a class="f" id="behance" href="https://www.behance.net/wellingtonlv" target="_blank"><img src="midias/behance-round-svgrepo-com (7).svg" alt=""></a>
+
+</footer>
+
+    <script src="../allPages/loadingall.js"></script>
+    <script src="../allPages/hamburgermenu.js"></script>
+    <script src="../allPages/NAV.js"></script>
+    <script src="../allPages/LINKS.js"></script>
+    <script src="p.Bubbles1.js"></script>
+    <script src="p.Bubbles2.js"></script>
+
+</body>
+</html>
