@@ -33,7 +33,8 @@
 
 
 body {
-    width: 100dvw;
+    width: 100%;
+    height: 100%;
     font: normal 600 1em "Oswald";
     position: relative;
     overflow-x: hidden;
@@ -189,6 +190,7 @@ body.carregado #limao {
     background-position: bottom left;
     position: relative;
     view-timeline-name: --bb;
+    overflow-x: hidden;
 } 
 
 
