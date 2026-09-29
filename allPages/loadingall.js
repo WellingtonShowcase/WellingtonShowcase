@@ -1,10 +1,17 @@
-const loadingframe = document.getElementById("loadingframe");
-const carregado = new Promise((resolve) => {
-    if (document.readyState === "complete") {
-        resolve();
+if (window.__loadingExecutado) {
+const frame = document.getElementById("loadingframe");
+    if (frame) frame.remove();
     } else {
-        window.addEventListener("load", resolve, { once: true });
-    }
+    window.__loadingExecutado = true;
+
+    const loadingframe = document.getElementById("loadingframe");
+
+const carregado = new Promise((resolve) => {
+if (document.readyState === "complete") {
+    resolve();
+} else {
+    window.addEventListener("load", resolve, { once: true });
+}
 });
 
 
@@ -36,13 +43,13 @@ if(!m3d){
 
 
 Promise.all([carregado, carregado3d]).then(() => {
-    loadingframe.classList.add("paginacarregada");
+    if (!loadingframe) return;
 
+    loadingframe.classList.add("paginacarregada");
     document.body.classList.add("carregado");
 
-    setTimeout(() => {
-        if (loadingframe) {
+    loadingframe.addEventListener("transitionend", () => {
         loadingframe.remove();
-        }
-    }, 500);
+    }, { once: true });
 });
+}
