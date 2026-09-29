@@ -50,6 +50,16 @@ html, body {
 }
 
 
+#aviso {
+    width: 90%;
+    color: white;
+    font-weight: 200;
+    font-size: 1em;
+    padding: 2%;
+    margin-left: 2%;
+}
+
+
 #m3D {
     display: flex;
     width: 100dvw;
@@ -515,7 +525,6 @@ body.carregado #limao {
     flex-direction: row;
     justify-content: center;
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 
@@ -533,8 +542,8 @@ body.carregado #limao {
 
 
 .f {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-shadow: 2px 2px 2px var(--cor5);
 }
 
