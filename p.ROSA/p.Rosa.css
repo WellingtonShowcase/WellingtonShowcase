@@ -514,6 +514,16 @@ article {
     margin: 2%;
 }
 
+
+#aviso {
+    font: normal 600 0.7em "Oswald";
+    width: 70%;
+    color: var(--letra1);
+    font-weight: 400;
+    padding: 2%;
+    margin-left: 2%;
+}
+
 /*RODAPÉ*/
 
 @media (max-width: 500px){

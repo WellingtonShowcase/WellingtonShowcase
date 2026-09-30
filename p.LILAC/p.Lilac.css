@@ -200,6 +200,17 @@ footer#RODAPE {
     width: 30px;
     margin: 5px;
 }
+
+
+#aviso {
+    position: absolute;
+    bottom: 2%;
+    width: 90%;
+    color: var(--lilacc1);
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: 2%;
+}
 /*RODAPÉ*/
 
 

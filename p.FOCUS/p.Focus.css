@@ -333,6 +333,17 @@ footer#RODAPE {
     width: 30px;
     margin: 5px;
 }
+
+#aviso {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    color: var(--corletras1);
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: 2%;
+    text-align: start;
+}
 /*RODAPÉ*/
 
 /*TELA DE LOADING*/

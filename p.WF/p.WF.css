@@ -419,6 +419,18 @@ header {
 }
 
 
+#aviso {
+    position: absolute;
+    bottom: 2%;
+    width: 60%;
+    color: white;
+    font-weight: 200;
+    font: normal 600 0.8em "Oswald";
+    padding: 2%;
+    margin-left: 2%;
+}
+
+
 /*GALERIA*/
 .l {
     position: absolute;

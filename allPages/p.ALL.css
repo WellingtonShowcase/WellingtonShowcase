@@ -572,6 +572,15 @@ article:last-child{
     margin: 5px;
 }
 
+
+#aviso {
+    width: 50%;
+    color: white;
+    font-weight: 200;
+    font-size: 1em;
+    margin-left: 5%;
+}
+
 /*RODAPÉ*/
 
 #SOBRE {

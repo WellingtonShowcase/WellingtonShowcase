@@ -29,6 +29,7 @@ body {
     font: normal 600 1em "Oswald";
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(31, 31, 31));
     color: rgb(211, 211, 211);
+    overflow-x: hidden;
 }
 
 
@@ -445,6 +446,17 @@ footer#RODAPE {
 .f img{
     width: 30px;
     margin: 5px;
+}
+
+
+#aviso {
+    width: 100dvw;
+    color: var(--led);
+    font-weight: 200;
+    font-size: 1em;
+    padding: 2%;
+    margin-left: 2%;
+    background-color: black;
 }
 
 
