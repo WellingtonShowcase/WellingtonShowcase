@@ -516,12 +516,20 @@ article {
 
 
 #aviso {
+    position: fixed;
+    bottom: 5%;
     font: normal 600 0.7em "Oswald";
     width: 70%;
     color: var(--letra1);
     font-weight: 400;
     padding: 2%;
     margin-left: 2%;
+    opacity: 0;
+}
+
+
+#aviso.visivel {
+    opacity: 1;
 }
 
 /*RODAPÉ*/
